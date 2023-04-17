@@ -92,7 +92,8 @@ section{
    flex-direction: column;
 }
 
-@media screen and (max-width:1028px)
+@media screen and (max-width:1028px){
 h2, p {
     margin-left: 2em;
+}
 }
