@@ -1,0 +1,93 @@
+
+@font-face {
+   font-family: ac;
+   src: url(font/Adobe-Clean-Light.ttf);
+   font-weight: 400;
+}
+@font-face {
+   font-family: ac;
+   src: url(font/Adobe-Clean-Bold.ttf);
+   font-weight: 900;
+}
+@font-face {
+   font-family: ac;
+   src: url(font/Adobe-Clean-Normal.ttf);
+   font-weight: 500;
+}
+@font-face {
+   font-family: ac;
+   src: url(font/Adobe-Clean-Italic.ttf);
+   font-style: italic;
+}
+html{
+   font-family: 'ac', sans-serif;
+   background-color:rgb(230, 230, 230);
+   color: rgb(86, 86, 86);
+}
+body {
+   max-width: 1000px;
+   margin: auto;
+}
+header{
+   margin: 4em 0;
+}
+h1{
+   font-size: 1.5em;
+   font-weight: 400;
+}
+h2{
+   font-size: 1.3em;
+   font-weight: 500;
+   margin: 4em 0 0 0;
+}
+p{
+   margin: 0;
+}
+strong{
+   font-weight: 900;
+}
+img{
+   max-width: 100%;
+   margin: 0.8em auto;
+}
+section{
+}
+
+
+
+
+#book p{
+   color: rgb(100, 100, 100);
+   font-style: italic;
+} 
+
+.images{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+   align-content: space-around;
+   align-items: center;
+}
+
+.l{
+   max-width: 27%;
+   margin: 0.8em 0;
+}
+
+.r{
+   max-width: 72%;
+   margin: 0.8em 0;
+}
+.c{
+   max-width: 48%;
+   margin: 0.8em 0;
+}
+.d{
+   max-width: 55%;
+   margin: 0.8em 0;
+}
+.row{
+   display: flex;
+   flex-direction: column;
+}
