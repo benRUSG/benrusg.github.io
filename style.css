@@ -94,7 +94,7 @@ section{
 
 @media screen and (max-width:1028px){
 header, main {
-    margin: 4em 1em;
+    margin: 4em 1em -3em 1em;
    }
 }
 
