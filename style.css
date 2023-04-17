@@ -96,4 +96,7 @@ section{
 header, main {
     margin: 0 1em;
 }
+   .d{
+      max-width: 48%;
+   }
 }
