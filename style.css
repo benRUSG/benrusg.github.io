@@ -51,6 +51,9 @@ img{
    max-width: 100%;
    margin: 0.8em auto;
 }
+img[src*="webp"]{
+   box-shadow: 0 4px 8px 0 rgb(108 108 108 / 10%);
+}
 section{
    margin: 2em 0 3em 0;
 }
