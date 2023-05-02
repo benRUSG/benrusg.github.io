@@ -16,7 +16,7 @@
 }
 @font-face {
    font-family: ac;
-   src: url(font/Adobe-Clean-Italic.ttf);
+   src: url(font/AdobeCleanLightIt.otf);
    font-style: italic;
 }
 html{
@@ -29,7 +29,7 @@ body {
    margin: auto;
 }
 header{
-   margin: 4em 0;
+   margin: 4em 0 3em 0;
 }
 h1{
    font-size: 1.5em;
@@ -38,7 +38,7 @@ h1{
 h2{
    font-size: 1.3em;
    font-weight: 500;
-   margin: 4em 0 0 0;
+   margin: 0 0 0.3em 0;
 }
 p{
    margin: 0;
@@ -51,10 +51,8 @@ img{
    margin: 0.8em auto;
 }
 section{
+   margin: 2em 0 3em 0;
 }
-
-
-
 
 #book p{
    color: rgb(100, 100, 100);
@@ -67,7 +65,8 @@ section{
    flex-direction: row;
    justify-content: space-between;
    align-content: space-around;
-   align-items: center;
+   align-items: flex-start;
+   margin-top: 1em;
 }
 
 .l{
@@ -81,7 +80,16 @@ section{
 }
 .c{
    max-width: 48%;
-   margin: 0.8em 0;
+   /* margin: 0.8em 0; */
+}
+
+figcaption{
+   position: relative;
+   top: -0.5em;
+   font-style: italic;
+   font-size: 0.85em;
+   text-align: center;
+   margin-bottom: 1em;
 }
 .d{
    max-width: 55%;
@@ -92,15 +100,7 @@ section{
    flex-direction: column;
 }
 
-@media screen and (max-width:1028px){
-header, main {
-    margin: 4em 1em -3em 1em;
-   }
-}
-
-@media screen and (max-width:930px){
-header, main {
-   .d{
-      max-width: 48%;
-   }
+@media screen and (max-width:1028px)
+h2, p {
+    margin-left: 2em;
 }
