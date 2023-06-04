@@ -4,56 +4,76 @@
    src: url(font/Adobe-Clean-Light.ttf);
    font-weight: 400;
 }
+
 @font-face {
    font-family: ac;
    src: url(font/Adobe-Clean-Bold.ttf);
    font-weight: 900;
 }
+
 @font-face {
    font-family: ac;
    src: url(font/Adobe-Clean-Normal.ttf);
    font-weight: 500;
 }
+
 @font-face {
    font-family: ac;
    src: url(font/AdobeCleanLightIt.otf);
    font-style: italic;
 }
+
+:root{
+   --clr-body-light: rgb(230, 230, 230);
+
+   --clr-text-dark: rgb(86, 86, 86);
+}
+
 html{
    font-family: 'ac', sans-serif;
-   background-color:rgb(230, 230, 230);
-   color: rgb(86, 86, 86);
+   background-color:var(--clr-body-light);
+   color: var(--clr-text-dark);
 }
+
 body {
    max-width: 1000px;
-   margin: auto;
+   margin: 0 auto;
    padding: 0 0.8em;
 }
+
 header{
    margin: 4em 0 3em 0;
 }
+
 h1{
    font-size: 1.5em;
    font-weight: 400;
 }
+
 h2{
    font-size: 1.3em;
    font-weight: 500;
    margin: 0 0 0.3em 0;
 }
+
 p{
    margin: 0;
 }
+
 strong{
    font-weight: 900;
 }
+
 img{
    max-width: 100%;
+   height: auto;
    margin: 0.8em auto;
 }
+
 img[src*="webp"]{
    box-shadow: 0 4px 8px 0 rgb(108 108 108 / 10%);
 }
+
 section{
    margin: 2em 0 3em 0;
 }
@@ -95,10 +115,12 @@ figcaption{
    text-align: center;
    margin-bottom: 1em;
 }
+
 .d{
    max-width: 55%;
    margin: 0.8em 0;
 }
+
 .row{
    display: flex;
    flex-direction: column;
