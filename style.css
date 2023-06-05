@@ -46,12 +46,12 @@ header{
 }
 
 h1{
-   font-size: 1.5em;
+   font-size: 1.5rem;
    font-weight: 400;
 }
 
 h2{
-   font-size: 1.3em;
+   font-size: 1.3rem;
    font-weight: 500;
    margin: 0 0 0.3em 0;
 }
@@ -68,6 +68,7 @@ img{
    max-width: 100%;
    height: auto;
    margin: 0.8em auto;
+   border-radius: 6px;
 }
 
 img[src*="webp"]{
@@ -111,7 +112,7 @@ figcaption{
    position: relative;
    top: -0.5em;
    font-style: italic;
-   font-size: 0.85em;
+   font-size: 0.9rem;
    text-align: center;
    margin-bottom: 1em;
 }
@@ -126,7 +127,18 @@ figcaption{
    flex-direction: column;
 }
 
-@media screen and (max-width:1028px)
-h2, p {
-    margin-left: 2em;
+.frenesie-bg {
+   background-color: rgb(93 121 119);
+   filter: opacity(0.95);
+}
+
+.stgb-bg {
+   background-color : rgb(208 215 215);
+   filter: opacity(0.8);
+}
+
+@media screen and (max-width:1028px){
+   h2, p {
+      margin-left: 2em;
+  }
 }
