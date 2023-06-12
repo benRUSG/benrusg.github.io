@@ -33,8 +33,12 @@
    --foreground: var(--clr-dark);
    --background: var(--clr-light);
 
+
+   --close-height: 1.5rem;
+
    --ff: 'ac', sans-serif;
    scroll-behavior: smooth; 
+
  }
  
  /*         darkmode toggle - START
@@ -227,14 +231,6 @@ li {
 /* ___________________________________________*/
 
 .slash::after {
-/*    content: "/";
-   font-style: italic;
-   padding: 0 0.4em;
-   --size: 1.5rem;
-   font-size: var(--size);
-   position: relative;
-   top: calc(var(--size) / 6); */
-
    display: inline-block;
    content: '';
    --height: 1.5rem;

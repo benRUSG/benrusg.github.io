@@ -45,6 +45,9 @@ class Modal {
        if (this.options.onOpen) {
            this.options.onOpen(this);
        }
+       // custom body no-scroll 
+       document.body.classList.add('no-scroll');
+
    }
 
    close() {
@@ -54,6 +57,8 @@ class Modal {
        if (this.options.onClose) {
            this.options.onClose(this);
        }
+       // custom body no-scroll
+       document.body.classList.remove('no-scroll');
    }
 
    get state() {
