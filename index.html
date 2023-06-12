@@ -42,7 +42,7 @@
             <h2 class="slash">Les tueurs du Brabant</h2>
             <p class="slash"><a href="https://auvio.rtbf.be/emission/les-tueurs-du-brabant-24625" target="_blank" data-i18n-key="tb-info-link">Podcast produit par la RTBF et Vivacité - janvier 2023</a></p>
             <p class="job-info">
-               <span class="dash" data-i18n-key="pao"></span><span class="dash" data-i18n-key="photo"></span><span class="dash" data-i18n-key="web"></span><span data-i18n-key="print"></span>
+               <span data-i18n-key="pao"></span>
             </p>
             <div class="images-container">
                <img src="img/01.webp" alt="Visuel générique du podcast Les tueurs du Brabant" width="1000" height="1000">
@@ -79,7 +79,7 @@
             <h2 class="slash">The Saint-Gilbillies</h2>
             <p class="slash" data-i18n-key="stgb"></p>
             <p class="job-info">
-               <span class="dash" data-i18n-key="pao"></span><span class="dash" data-i18n-key="photo"></span><span class="dash" data-i18n-key="web"></span><span data-i18n-key="print"></span>
+               <span class="dash" data-i18n-key="pao"></span><span class="dash" data-i18n-key="photo"></span><span class="dash" data-i18n-key="web"></span><span data-i18n-key="pao"></span>
             </p>
             <div class="images-container">
                <div class="c">
@@ -215,11 +215,9 @@
          <div id="wrapper-close">
             <button class="close">&times;</button> 
          </div>
-         <div class="header">
-               <!-- <h1>Contact</h1> -->
-               <h1 data-i18n-key="contact-form-hi"></h1>
-               <p class="from-welcom-message" data-i18n-key="contact-form-msg"></p>
-         </div>
+         
+         <h1 class="header" data-i18n-key="contact-form-hi"></h1>
+         <p class="from-welcom-message" data-i18n-key="contact-form-msg"></p>
          
          <div id="contact-form">
             <form action="https://forms.un-static.com/forms/18609a5b675b2f0f03b7cde4f4f2d0598ea3a81e" method="post">
@@ -269,4 +267,36 @@
   <script>Modal.initElements();</script>
   <script src="js/localization-script.js"></script>
   </body>
+ <!--  <div class="modal contact_modal" data-size="small">
+   <div class="container --border-radius-10">
+      <div id="wrapper-close">
+         <button class="close">&times;</button> 
+      </div>
+      <div class="header">
+            <h1 data-i18n-key="contact-form-hi"></h1>
+            <p class="from-welcom-message" data-i18n-key="contact-form-msg"></p>
+      </div>
+      
+      <div id="contact-form">
+         <form action="https://forms.un-static.com/forms/18609a5b675b2f0f03b7cde4f4f2d0598ea3a81e" method="post">
+            <div class="contact-form-container">
+               <div>
+                  <label for="firstName" data-i18n-key="contact-form-firstname"></label>
+                  <input id="firstName" type="text" name="firstName" autocomplete="name" placeholder="Jhon" data-i18n-key="contact-form-firstname" data-i18n-ph="ph-firstname" required>
+               </div>
+               <div>
+                  <label for="lastName" data-i18n-key="contact-form-name"></label>
+                  <input id="lastName" type="text" data-i18n-key="contact-form-name" name="lastName" autocomplete="family-name" placeholder="Doe" data-i18n-ph="ph-name" required>
+               </div>
+               <div>
+                  <label for="email" data-i18n-key="contact-form-email"></label>
+                  <input id="email" type="email" name="email" autocomplete="email" placeholder="jhon.doe@gmail.com" data-i18n-key="contact-form-email" data-i18n-ph="ph-email" required>
+               </div>
+               <div>
+                  <textarea name="message" cols="40" rows="5" data-i18n-key="contact-form-message"  data-i18n-ph="ph-message" placeholder="Message"></textarea>
+               </div>
+            </div>
+            <button id="send-button" type="submit" class="submit" data-i18n-key="send"></button>
+         </form>
+      </div> -->
 </html>
