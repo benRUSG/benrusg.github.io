@@ -56,9 +56,10 @@
   }
 
 .scroll-top:hover {
-   opacity: 0.8;
+   opacity: 1;
+   transform: scale(1.15);
   }
 
 .scroll-top:hover .progress-circle path, .scroll-top:hover .icon-tabler-arrow-up {
-   opacity: 0.8;
+   /* opacity: 0.8; */
   }
