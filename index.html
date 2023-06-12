@@ -220,7 +220,7 @@
          <p class="from-welcom-message" data-i18n-key="contact-form-msg"></p>
          
          <div id="contact-form">
-            <form action="https://forms.un-static.com/forms/18609a5b675b2f0f03b7cde4f4f2d0598ea3a81e" method="post">
+            <form id="form" action="https://forms.un-static.com/forms/18609a5b675b2f0f03b7cde4f4f2d0598ea3a81e" method="post" onsubmit="storeMsgSent();">
                <div class="contact-form-container">
                   <div>
                      <label for="firstName" data-i18n-key="contact-form-firstname"></label>
@@ -238,12 +238,22 @@
                      <textarea name="message" cols="40" rows="5" data-i18n-key="contact-form-message"  data-i18n-ph="ph-message" placeholder="Message"></textarea>
                   </div>
                </div>
-               <button id="send-button" type="submit" class="submit" data-i18n-key="send"></button>
+               <button id="send-btn" type="submit" class="submit" data-i18n-key="send"></button>
             </form>
          </div>
-         
       </div>
    </div>
+
+         <div class="modal message-sent-modal">
+            <div class="container --border-radius-10">
+               <div id="wrapper-close">
+                  <button class="close remove-msg-sent"></button> 
+               </div>
+      
+               <h1 class="header" data-i18n-key="msg-sent-title"></h1>
+               <p class="from-welcom-message" data-i18n-key="msg-sent-msg"></p>               
+            </div>
+         </div>
 
    <!--   Scroll to Top   -->
    <div id="scroll-top-cotainer">
@@ -266,37 +276,6 @@
   <script src="js/modal.js"></script>
   <script>Modal.initElements();</script>
   <script src="js/localization-script.js"></script>
+  <script src="js/message.js"></script>
   </body>
- <!--  <div class="modal contact_modal" data-size="small">
-   <div class="container --border-radius-10">
-      <div id="wrapper-close">
-         <button class="close">&times;</button> 
-      </div>
-      <div class="header">
-            <h1 data-i18n-key="contact-form-hi"></h1>
-            <p class="from-welcom-message" data-i18n-key="contact-form-msg"></p>
-      </div>
-      
-      <div id="contact-form">
-         <form action="https://forms.un-static.com/forms/18609a5b675b2f0f03b7cde4f4f2d0598ea3a81e" method="post">
-            <div class="contact-form-container">
-               <div>
-                  <label for="firstName" data-i18n-key="contact-form-firstname"></label>
-                  <input id="firstName" type="text" name="firstName" autocomplete="name" placeholder="Jhon" data-i18n-key="contact-form-firstname" data-i18n-ph="ph-firstname" required>
-               </div>
-               <div>
-                  <label for="lastName" data-i18n-key="contact-form-name"></label>
-                  <input id="lastName" type="text" data-i18n-key="contact-form-name" name="lastName" autocomplete="family-name" placeholder="Doe" data-i18n-ph="ph-name" required>
-               </div>
-               <div>
-                  <label for="email" data-i18n-key="contact-form-email"></label>
-                  <input id="email" type="email" name="email" autocomplete="email" placeholder="jhon.doe@gmail.com" data-i18n-key="contact-form-email" data-i18n-ph="ph-email" required>
-               </div>
-               <div>
-                  <textarea name="message" cols="40" rows="5" data-i18n-key="contact-form-message"  data-i18n-ph="ph-message" placeholder="Message"></textarea>
-               </div>
-            </div>
-            <button id="send-button" type="submit" class="submit" data-i18n-key="send"></button>
-         </form>
-      </div> -->
 </html>

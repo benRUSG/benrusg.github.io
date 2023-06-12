@@ -55,7 +55,10 @@
   "contact-form-message": "",
   "ph-email": "jan.janssen@gmail.com",
   "ph-message": "Bericht",
-  "send": "Zenden"
+  "send": "Zenden",
+
+  "msg-sent-title": "Your message is sent!",
+  "msg-sent-msg": "I'll get back to you asap. Have a nice day."
 
 }
 

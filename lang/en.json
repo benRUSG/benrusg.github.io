@@ -55,7 +55,9 @@
   "ph-email": "john.doe@gmail.com",
   "contact-form-message": "",
   "ph-message": "Message",
-  "send": "Send"
+  "send": "Send",
 
+  "msg-sent-title": "Your message is sent!",
+  "msg-sent-msg": "I'll get back to you asap. Have a nice day."
 }
 

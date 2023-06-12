@@ -55,7 +55,10 @@
   "ph-email": "alex.almgren@gmail.com",
   "contact-form-message": "",
   "ph-message": "Meddelande",
-  "send": "Skicka"
+  "send": "Skicka",
+
+  "msg-sent-title": "Your message is sent!",
+  "msg-sent-msg": "I'll get back to you asap. Have a nice day."
 
 }
 

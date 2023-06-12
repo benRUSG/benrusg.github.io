@@ -56,7 +56,10 @@
   "ph-email": "alex.dupont@gmail.com",
   "contact-form-message": "",
   "ph-message": "Message",
-  "send": "Envoyer"
+  "send": "Envoyer",
+
+  "msg-sent-title": "Votre message a bien été envoyé !",
+  "msg-sent-msg": "Je reviens vers vous dans les plus brefs délais."
 
 }
 
