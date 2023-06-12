@@ -30,24 +30,24 @@
    --clr-accent-neg: rgb(0, 90, 146);
    --clr-btn: rgb(255, 170, 0);
  
-   --foreground: var(--clr-light);
-   --background: var(--clr-dark);
+   --foreground: var(--clr-dark);
+   --background: var(--clr-light);
 
    --ff: 'ac', sans-serif;
    scroll-behavior: smooth; 
  }
  
- /*         light mode toggle - START
+ /*         darkmode toggle - START
  ___________________________________________*/
 
- .lightmode {
+ .darkmode {
    --clr-light: rgb(230, 230, 230);
    --clr-dark: rgb(86, 86, 86);
    --clr-accent: rgb(0, 90, 146);
    --clr-accent-neg: rgb(255, 170, 0);
  
-   --foreground: var(--clr-dark);
-   --background: var(--clr-light);
+   --foreground: var(--clr-light);
+   --background: var(--clr-dark);
 
  }
 
@@ -105,11 +105,11 @@
    box-shadow: inset 0 0 0 var(--size), calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size), var(--offset-orthogonal) 0 0 var(--ray-size), 0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size), 0 var(--offset-orthogonal) 0 var(--ray-size), calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0 var(--ray-size), var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size), calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size), var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
  }
  
- .lightmode .toggle-ico {
+ .darkmode .toggle-ico {
    box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
  }
 
-/*         light mode toggle - END
+/*         darkmode toggle - END
  ___________________________________________*/
  
 
