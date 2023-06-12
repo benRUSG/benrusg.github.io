@@ -119,12 +119,6 @@
   }
 }
 
-@media screen and (max-width:480px){
-   .--break-point::before {
-      content: "\a";
-      display: block;
-   }
-}
 
 *,
 *::before,
@@ -177,6 +171,7 @@ h1 {
    font-size: 2rem;
    font-weight: 100;
    letter-spacing: -0.015rem;
+   margin-bottom: 7rem;
 }
 
 h2 {
@@ -232,15 +227,19 @@ li {
 .slash::after {
    content: "/";
    font-style: italic;
-   padding: 0 0.6em;
-}
-
-h1 .slash::after {
-   --size: 4rem;
-   padding: 0 0.2em;
+   padding: 0 0.4em;
+   --size: 1.5rem;
    font-size: var(--size);
    position: relative;
    top: calc(var(--size) / 6);
+}
+
+h1 .slash::after {
+   --size: 3rem;
+   padding: 0 0.2em;
+   font-size: var(--size);
+   position: relative;
+   top: calc(var(--size) / 5.8);
    
 }
 
@@ -450,3 +449,19 @@ figcaption {
    border-radius: 10px;
 }
  
+
+
+@media screen and (max-width:480px){
+   .--break-point::before {
+      content: "\a";
+      display: block;
+   }
+
+   h1 {
+      margin-bottom: 4rem;
+   }
+
+   #wrapper {
+      margin-bottom: 2rem;
+   }
+}
