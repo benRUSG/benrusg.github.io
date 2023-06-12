@@ -26,8 +26,8 @@
 :root {
    --clr-light: rgb(230, 230, 230);
    --clr-dark: rgb(86, 86, 86);
-   --clr-accent: rgb(255, 170, 0);
-   --clr-accent-neg: rgb(0, 90, 146);
+   --clr-accent: rgb(0, 90, 146);
+   --clr-accent-neg: rgb(255, 170, 0);
    --clr-btn: rgb(255, 170, 0);
  
    --foreground: var(--clr-dark);
@@ -43,8 +43,8 @@
  .darkmode {
    --clr-light: rgb(230, 230, 230);
    --clr-dark: rgb(86, 86, 86);
-   --clr-accent: rgb(0, 90, 146);
-   --clr-accent-neg: rgb(255, 170, 0);
+   --clr-accent: rgb(255, 170, 0);
+   --clr-accent-neg: rgb(0, 90, 146);
  
    --foreground: var(--clr-light);
    --background: var(--clr-dark);
