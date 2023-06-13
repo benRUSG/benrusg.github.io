@@ -501,7 +501,6 @@ figcaption {
 .--border-radius-10 {
    border-radius: 10px;
 }
- 
 
 
 @media screen and (max-width:480px){
@@ -516,5 +515,6 @@ figcaption {
 
    #wrapper {
       margin-bottom: 2rem;
+      padding-right: 0;
    }
 }
