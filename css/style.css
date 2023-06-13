@@ -40,6 +40,40 @@
    scroll-behavior: smooth; 
 
  }
+
+/*  h1, h2, p, img, span,em {
+   animation: fadeIn ease 1s;
+   -webkit-animation: fadeIn ease 1s;
+   -moz-animation: fadeIn ease 1s;
+   -o-animation: fadeIn ease 1s;
+   -ms-animation: fadeIn ease 1s;
+ }
+ @keyframes fadeIn {
+   0% {opacity:0.4;}
+   100% {opacity:1;}
+ }
+ 
+ @-moz-keyframes fadeIn {
+   0% {opacity:0.4;}
+   100% {opacity:1;}
+ }
+ 
+ @-webkit-keyframes fadeIn {
+   0% {opacity:0.4;}
+   100% {opacity:1;}
+ }
+ 
+ @-o-keyframes fadeIn {
+   0% {opacity:0.4;}
+   100% {opacity:1;}
+ }
+ 
+ @-ms-keyframes fadeIn {
+   0% {opacity:0.4;}
+   100% {opacity:1;}
+ }
+ */
+
  
  /*         darkmode toggle - START
  ___________________________________________*/
@@ -385,6 +419,20 @@ img {
    margin: 0.8em auto;
    border-radius: 3px;
 }
+/*reveal*/
+.revealed {
+   transform: translateY(0px) !important;
+   opacity: 1 !important;
+}
+
+#book img, #book h2, #book p, #book figcaption {
+   position: relative;
+   transform: translateY(20px);
+   opacity: 0;
+   transition: all 250ms cubic-bezier(0.75, 0.03, 0.37, 1.03);
+}
+
+
 
 img[src*="webp"] {
    box-shadow: 0 4px 8px 0 rgba(var(--foreground), 1);
@@ -446,7 +494,7 @@ figcaption {
 }
 
 .stgb-bg {
-   background-color : rgb(208 215 215);
+   background-color : hsl(195deg 26% 83% / 86%);
    filter: opacity(0.8);
 }
 

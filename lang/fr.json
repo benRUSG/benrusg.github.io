@@ -59,7 +59,8 @@
   "send": "Envoyer",
 
   "msg-sent-title": "Votre message a bien été envoyé !",
-  "msg-sent-msg": "Je reviens vers vous dans les plus brefs délais."
+  "msg-sent-msg": "Je reviens vers vous dans les plus brefs délais.",
+  "msg-sent-msg-end": "Belle journée !"
 
 }
 

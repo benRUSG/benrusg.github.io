@@ -39,13 +39,13 @@
    <main> 
       <div id="book">
          <section>
-            <h2 class="slash">Les tueurs du Brabant</h2>
-            <p class="slash"><a href="https://auvio.rtbf.be/emission/les-tueurs-du-brabant-24625" target="_blank" data-i18n-key="tb-info-link">Podcast produit par la RTBF et Vivacité - janvier 2023</a></p>
-            <p class="job-info">
+            <h2 class="slash revealed">Les tueurs du Brabant</h2>
+            <p class="slash revealed"><a href="https://auvio.rtbf.be/emission/les-tueurs-du-brabant-24625" target="_blank" data-i18n-key="tb-info-link">Podcast produit par la RTBF et Vivacité - janvier 2023</a></p>
+            <p class="job-info revealed">
                <span data-i18n-key="pao"></span>
             </p>
             <div class="images-container">
-               <img src="img/01.webp" alt="Visuel générique du podcast Les tueurs du Brabant" width="1000" height="1000">
+               <img class="revealed" src="img/01.webp" alt="Visuel générique du podcast Les tueurs du Brabant" width="1000" height="1000">
                <div style="width: 100%;"><figcaption data-i18n-key="generic"></figcaption></div>
 
                <img class="l" src="img/04.webp" alt="Visuel du podcast Les tueurs du Brabant, déstiné à la plateforme Auvio" width="270" height="405">
@@ -252,6 +252,7 @@
          <div class="content">
             <h1 class="header" data-i18n-key="msg-sent-title"></h1>
             <p class="from-welcom-message" data-i18n-key="msg-sent-msg"></p>
+            <p class="from-welcom-message" data-i18n-key="msg-sent-msg-end"></p>
          </div>               
       </div>
    </div>
@@ -278,5 +279,6 @@
   <script>Modal.initElements();</script>
   <script src="js/localization-script.js"></script>
   <script src="js/message.js"></script>
+  <script src="js/reveal.js"></script>
   </body>
 </html>

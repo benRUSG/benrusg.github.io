@@ -57,7 +57,8 @@
   "ph-message": "Message",
   "send": "Send",
 
-  "msg-sent-title": "Your message is sent!",
-  "msg-sent-msg": "I'll get back to you asap. Have a nice day."
+  "msg-sent-title": "Your message has been successfully sent!",
+  "msg-sent-msg": "I'll get back to you asap.",
+  "msg-sent-msg-end": "Have a nice day!"
 }
 

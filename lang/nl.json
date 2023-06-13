@@ -57,8 +57,9 @@
   "ph-message": "Bericht",
   "send": "Zenden",
 
-  "msg-sent-title": "Your message is sent!",
-  "msg-sent-msg": "I'll get back to you asap. Have a nice day."
+  "msg-sent-title": "Uw bericht is succesvol verzonden!",
+  "msg-sent-msg": "Ik contact je zo snel mogelijk terug.",
+  "msg-sent-msg-end": "Prettige dag!"
 
 }
 

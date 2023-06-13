@@ -7,7 +7,7 @@
 }
 
 .scroll-top {
-   --width: 2.5rem;
+   --width: 3rem;
    color: var(--foreground);
    position: relative;
    z-index: 50;
@@ -41,7 +41,7 @@
 
 .scroll-top .icon-tabler-arrow-up {
    position: absolute;
-   stroke-width: 2px;
+   stroke-width: 3px;
    stroke: white;
   }
 

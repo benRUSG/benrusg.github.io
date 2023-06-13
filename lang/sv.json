@@ -57,8 +57,9 @@
   "ph-message": "Meddelande",
   "send": "Skicka",
 
-  "msg-sent-title": "Your message is sent!",
-  "msg-sent-msg": "I'll get back to you asap. Have a nice day."
+  "msg-sent-title": "Ditt meddelande har skickats!",
+  "msg-sent-msg": "Jag återkommer till dig så fort som möjligt.",
+  "msg-sent-msg-end": "Ha en bra dag!"
 
 }
 
