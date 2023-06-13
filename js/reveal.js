@@ -8,14 +8,14 @@ function reveal(){
       var revealtop = reveals[i].getBoundingClientRect().top;
       var revealpoint = 10;
 
-      if(revealtop < windowheight - revealpoint){
-         reveals[i].classList.add('revealed')
-      }
-      else{
-         reveals[i].classList.remove('revealed')
-      }
+      if (!reveals[i].classList.contains('dont-reveal')) {
+         if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('revealed')
+         }
+         else{
+            reveals[i].classList.remove('revealed')
+         }
+       }
    }
 }
-
-
 
