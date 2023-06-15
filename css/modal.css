@@ -193,7 +193,6 @@
 }
 
 @media screen and (min-width:900px) and (max-height:700px) {
-/* display grid………*/
    .modal {
       padding: 1rem;
    }
@@ -209,6 +208,10 @@
 
    .modal .container .header, .modal .container p {
       width: 55%;
+   }
+
+   .modal p {
+      margin: 0 auto;
    }
 
    #contact-form {
