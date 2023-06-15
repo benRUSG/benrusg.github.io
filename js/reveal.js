@@ -1,3 +1,5 @@
+// Slide In new element appearing at the bottom of the page
+
 window.addEventListener('scroll', reveal);
 
 function reveal(){
