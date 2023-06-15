@@ -18,12 +18,12 @@ const disableDarkMode = () => {
 }
  
 
-const query = window.matchMedia;
+//const query = window.matchMedia;
 // If the user already visited and enabled darkMode
 // start things off with it on
-if (darkMode === 'enabled') {
+if (darkMode === 'enabled' || window.matchMedia('(prefers-color-scheme: dark)').matches) {
   enableDarkMode();
-  console.log(query);
+  console.log('dark');
 }
 
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
