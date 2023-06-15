@@ -17,19 +17,10 @@ const disableDarkMode = () => {
   localStorage.setItem('darkMode', null);
 }
  
-
-//const query = window.matchMedia;
 // If the user already visited and enabled darkMode
 // start things off with it on
 if (darkMode === 'enabled' || window.matchMedia('(prefers-color-scheme: dark)').matches) {
   enableDarkMode();
-  console.log('dark');
-}
-
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  console.log('dark');
-} else {
-  console.log('not dark' + window.matchMedia);
 }
 
 // When someone clicks the button
