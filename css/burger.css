@@ -1,0 +1,181 @@
+:root {
+   --burger-width: 2rem;
+   --burger-height: 1.5rem;
+   --burger-stroke: 2px;
+   --burger-padding: 0.33rem;
+}
+
+#burger-container {
+   position: sticky;
+   top: 0;
+   display: flex;
+   justify-content: flex-end;
+   z-index: 50;
+   opacity: 0;
+   transition: all 500ms;
+   pointer-events: none; 
+}
+
+#burger-container.on {
+   opacity: 1;
+   top: 3rem;
+   transition: all 500ms;
+}
+
+.darkmode #burger {
+   background-color: revert;
+}
+
+
+#burger {
+   height: var(--burger-width);
+   width: var(--burger-width);
+   background-color: var(--clr-accent);
+   opacity: 0;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: calc(var(--burger-padding) * 1.5) var(--burger-padding);
+   margin-right: 2rem;
+   border-radius: 0.33rem;
+   cursor: pointer;
+   pointer-events: auto; 
+}
+
+#burger-container.on #burger {
+   opacity: 1;
+   transition: all 500ms;
+}
+
+
+/* #burger-checker
+{
+   opacity: 0;
+   cursor: pointer;
+}
+#burger-container.on#burger-checker.checked
+{
+   opacity: 1;
+   cursor: pointer;
+} */
+
+.darkmode .on span {
+   background: var(--clr-accent);
+}
+
+.on span {
+  display: block;
+  width: 100%;
+  height: var(--burger-stroke);
+  position: relative;
+  background: var(--background);
+  border-radius: var(--burger-stroke);
+  z-index: 1;
+  transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.3s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.35s ease;
+/* -webkit-box-shadow: 0px 0px 5px 4px var(--background);
+-moz-box-shadow: 0px 0px 5px 4px var(--background);
+box-shadow: 0px 0px 5px 4px var(--background); */
+}
+
+#burger.checked {
+   justify-content: center;
+   align-content: center;
+   background-color: transparent;
+}
+
+#burger.checked span {
+   width: calc(calc(var(--burger-width) - var(--burger-padding) * 2)  / cos(45deg));
+   background: var(--foreground);
+   opacity: 1;
+   transform: rotate(-45deg) translateY(var(--burger-stroke)) translateX(0px);
+   transition: 500ms;
+}
+
+#burger.checked:hover span {
+   background: var(--clr-btn);
+}
+
+#burger.checked span:nth-of-type(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+  transition: 0s;
+}
+
+#burger.checked span:nth-of-type(3) {
+  opacity: 1;
+  transform: rotate(45deg) translateY(calc(var(--burger-stroke) * -1)) translateX(0px);
+  transition: 500ms;
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's fade it in from the left
+
+#burger-checker.checked ~ ul
+{
+  transform: none;
+  opacity: 1;
+} */
+
+@media screen and (max-width: 768px) {
+  #menu {
+    transform: none;
+    opacity: 0;
+
+    transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+}
+
+#menu-wrapper.slide {
+   position: sticky;
+   position: -moz-sticky;
+   position: -ms-sticky;
+   position: -o-sticky;
+   width: 100%;
+   background-color: var(--background);
+   top: -100%;
+   left: 0;
+   padding: 1rem 0 3rem 0;
+   justify-content: center;
+   transition: 2s ease-out;
+   opacity: 0;
+   outline: 4px solid var(--background);
+}
+#menu-wrapper.slide.in {
+   padding: 3rem 0 1rem 0;
+   top: 0;
+   transition: 300ms;
+   opacity: 0.95;
+   z-index: 40;
+}

@@ -9,30 +9,38 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/top-scroll.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/burger.css">
     <link rel="icon" src="favicon.ico" type="image/x-icon">
   </head>
   <body>
-   <header>
 
-      <div id="wrapper">
-         <div id="wrapper__navigation-menu" role="navigation">
-            <!-- <a href="#" data-i18n-key="about">about</a> -->
-            <a href="#" data-modal=".contact_modal" data-i18n-key="contact">contact</a>
-             <select data-i18n-switcher class="locale-switcher" name="select">
-               <option value="en">en</option>
-               <option value="fr">fr</option>
-               <option value="nl">nl</option>
-               <option value="sv">sv</option>
-             </select>
-            <i class="separator"></i>
-            <button id="dark-mode-toggle" class="dark-mode-toggle">
-               <i class="toggle-ico"></i>
-               <!-- <p class="toggle-title">mode</p> -->
-            </button>
-         </div>
+   <div id="burger-container"> 
+      <div id="burger">
+         <span></span>
+         <span></span>
+         <span></span>
       </div>
-      
-      
+   </div>
+
+   <div id="menu-wrapper">
+      <div id="menu-wrapper__navigation-menu" role="navigation">
+         <!-- <a href="#" data-i18n-key="about">about</a> -->
+         <a href="#" data-modal=".contact_modal" data-i18n-key="contact">contact</a>
+          <select data-i18n-switcher class="locale-switcher" name="select">
+            <option value="en">en</option>
+            <option value="fr">fr</option>
+            <option value="nl">nl</option>
+            <option value="sv">sv</option>
+          </select>
+         <i class="separator"></i>
+         <button id="dark-mode-toggle" class="dark-mode-toggle">
+            <i class="toggle-ico"></i>
+            <!-- <p class="toggle-title">mode</p> -->
+         </button>
+      </div>
+   </div>
+
+   <header>
       <h1><span class="slash">Benjamin Drouven</span><strong class="uppercase --break-point" data-i18n-key="portfolio">portfolio</strong></h1>
    </header>
 
@@ -271,7 +279,7 @@
       </svg>
       </button>
    </div>
-   
+
 
   <script src="js/light-mode-toggle.js"></script>
   <script src="js/top-scroll.js"></script>
@@ -280,5 +288,6 @@
   <script src="js/localization-script.js"></script>
   <script src="js/message.js"></script>
   <script src="js/reveal.js"></script>
+  <script src="js/burger.js"></script>
   </body>
 </html>

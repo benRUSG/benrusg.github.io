@@ -28,7 +28,7 @@ if (scrollTopBtn) {
   }
 
   updateProgress();
-  const offset = 100;
+  const offset = 700;
 
   window.addEventListener('scroll', function(event) {
     updateProgress();

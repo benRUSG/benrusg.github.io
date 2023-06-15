@@ -25,12 +25,13 @@
 
 :root {
    --clr-light: rgb(240, 240, 240);
-   --clr-dark: rgb(86, 86, 86);
+   --clr-dark: rgb(65, 65, 65);
+   --clr-dark-light: rgb(80, 80, 80);;
    --clr-accent: rgb(0, 90, 146);
    --clr-accent-neg: rgb(255, 170, 0);
    --clr-btn: rgb(255, 170, 0);
  
-   --foreground: var(--clr-dark);
+   --foreground: var(--clr-dark-light);
    --background: var(--clr-light);
 
 
@@ -38,7 +39,6 @@
 
    --ff: 'ac', sans-serif;
    scroll-behavior: smooth; 
-
  }
 
  
@@ -46,8 +46,8 @@
  ___________________________________________*/
 
  .darkmode {
-   --clr-light: rgb(240, 240, 240);
-   --clr-dark: rgb(86, 86, 86);
+   --clr-light: rgb(230, 230, 230);
+   --clr-dark: rgb(65, 65, 65);
    --clr-accent: rgb(255, 170, 0);
    --clr-accent-neg: rgb(0, 90, 146);
  
@@ -143,14 +143,14 @@ body {
    transition: all 400ms;
 }
 
-#wrapper {
+#menu-wrapper {
    display: flex;
    justify-content: flex-end;
    margin-bottom: 3em;
    padding-right: 2em;
 }
 
-#wrapper__navigation-menu {
+#menu-wrapper__navigation-menu {
    display: grid;
    grid-template-columns: auto auto auto auto auto;
    gap: 0px 16px;
@@ -158,7 +158,7 @@ body {
    font-size: 1.3rem;
 }
 
-#wrapper__navigation-menu a {
+#menu-wrapper__navigation-menu a {
    text-decoration: none;
 }
 
@@ -169,10 +169,10 @@ body {
  transform: rotateX(45deg);
 }
 
-
+/* 
 header {
    margin: 2em 0 3em 0;
-}
+} */
 
 h1 {
    font-size: 2rem;
@@ -299,6 +299,10 @@ label {
 
 input, textarea, select, button {
    font-family: var(--ff);
+}
+
+select:hover {
+   cursor: pointer;
 }
 
 input, textarea {
@@ -487,7 +491,7 @@ figcaption {
       margin-bottom: 4rem;
    }
 
-   #wrapper {
+   #menu-wrapper {
       margin-bottom: 2rem;
       padding-right: 0;
    }
