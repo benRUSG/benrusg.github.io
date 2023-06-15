@@ -2,6 +2,7 @@ class Modal {
 
    constructor(options) {
        let defaults = { element: null, effect: 'zoom', state: 'closed', size: 'medium', content: null, footer: null, header: null, title: null };
+       const separator = document.querySelector('.separator');
        this.options = Object.assign(defaults, options);
        if (this.options.element == null) {
            this.options.element = document.createElement('div');
@@ -46,10 +47,9 @@ class Modal {
            this.options.onOpen(this);
        }
        // custom body no-scroll 
-
-        const separator = document.querySelector('.separator');
        document.body.classList.add('no-scroll');
-       separator.classList.add('hidden');
+       // i.separator
+       document.querySelector('.separator').classList.add('hidden');
 
    }
 
@@ -61,9 +61,9 @@ class Modal {
            this.options.onClose(this);
        }
        // custom body no-scroll
-       const separator = document.querySelector('.separator');
        document.body.classList.remove('no-scroll');
-       separator.classList.remove('hidden');
+       // i.separator
+       document.querySelector('.separator').classList.remove('hidden');
    }
 
    get state() {
