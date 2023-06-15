@@ -299,3 +299,7 @@
 .no-scroll {
    overflow: hidden;
 }
+
+.hidden {
+   visibility: hidden;
+}

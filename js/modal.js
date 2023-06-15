@@ -46,7 +46,10 @@ class Modal {
            this.options.onOpen(this);
        }
        // custom body no-scroll 
+
+        const separator = document.querySelector('.separator');
        document.body.classList.add('no-scroll');
+       separator.classList.add('hidden');
 
    }
 
@@ -58,7 +61,9 @@ class Modal {
            this.options.onClose(this);
        }
        // custom body no-scroll
+       const separator = document.querySelector('.separator');
        document.body.classList.remove('no-scroll');
+       separator.classList.remove('hidden');
    }
 
    get state() {
