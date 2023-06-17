@@ -3,6 +3,9 @@ let darkMode = localStorage.getItem('darkMode');
 
 const darkModeToggle = document.querySelector('#dark-mode-toggle');
 
+const systDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const systLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+
 const enableDarkMode = () => {
   // 1. Add the class to the body
   document.body.classList.add('darkmode');
@@ -19,9 +22,14 @@ const disableDarkMode = () => {
  
 // If the user already visited and enabled darkMode
 // start things off with it on
-if (darkMode === 'enabled' || window.matchMedia('(prefers-color-scheme: dark)').matches) {
+if (darkMode === 'enabled') {
   enableDarkMode();
-}
+} else if (systDark) {
+    enableDarkMode();
+  }
+  else if (systLight) {
+    disableDarkMode();
+  }
 
 // When someone clicks the button
 darkModeToggle.addEventListener('click', () => {
@@ -36,6 +44,4 @@ darkModeToggle.addEventListener('click', () => {
     disableDarkMode(); 
   }
 });
-
-
 
