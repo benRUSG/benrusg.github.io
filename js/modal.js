@@ -2,7 +2,7 @@ class Modal {
 
    constructor(options) {
        let defaults = { element: null, effect: 'zoom', state: 'closed', size: 'medium', content: null, footer: null, header: null, title: null };
-       const separator = document.querySelector('.separator');
+       //const separator = document.querySelector('.separator');
        this.options = Object.assign(defaults, options);
        if (this.options.element == null) {
            this.options.element = document.createElement('div');
@@ -86,7 +86,7 @@ class Modal {
 
    set size(value) {
        this.options.size = value;
-       this.options.element.classList.remove('small', 'large', 'medium', 'full');
+       this.options.element.classList.remove('small', 'large', 'medium', 'full', 'image');
        this.options.element.classList.add(value);
    }
 
@@ -168,20 +168,37 @@ class Modal {
    }
 
    static initElements() {
-       document.querySelectorAll('[data-modal]').forEach(element => {
-           element.addEventListener('click', event => {
-               event.preventDefault();
-               let modalElement = document.querySelector(element.dataset.modal);
-               let modal = new Modal({ element: modalElement });
-               for (let data in modalElement.dataset) {
-                   if (modal[data]) {
-                       modal[data] = modalElement.dataset[data];
-                   }                           
-               }
-               modal.open();
-           });
-       });
-   }
+    document.querySelectorAll('[data-modal]').forEach(element => {
+        element.addEventListener('click', event => {
+            event.preventDefault();
+            let modalElement = document.querySelector(element.dataset.modal);
+            let modal = new Modal({ element: modalElement });
+            for (let data in modalElement.dataset) {
+                if (modal[data]) {
+                    modal[data] = modalElement.dataset[data];
+                }                           
+            }
+            modal.open();
+        });
+    });
+}
+
+// Custom Trigger image modal
+/* static initImages() {
+    document.querySelectorAll('[data-modal]').forEach(element => {
+        element.addEventListener('click', event => {
+            event.preventDefault();
+            let modalElement = document.querySelector(element.dataset.modal);
+            let modal = new Modal({ element: modalElement });
+            for (let data in modalElement.dataset) {
+                if (modal[data]) {
+                    modal[data] = modalElement.dataset[data];
+                }                           
+            }
+            modal.open();
+        });
+    });
+} */
 
    static confirm(value, success, cancel) {
        let modal = new Modal({ content: value, header: '', footer: '<button class="success">OK</button><button class="cancel alt">Cancel</button>' });
@@ -225,6 +242,56 @@ class Modal {
    }
 
 }
+
+
+
+// Image Modal
+
+
+const myImageModal = new Modal({
+    effect: 'zoom', // zoom|slide
+    size: 'image', // small|medium|large|full | image
+    //content: '<p>The content for your dynamic modal.</p>',
+
+    element: document.querySelector('.my-image-modal'),          
+     
+});
+
+
+ 
+
+var small_images = document.getElementById("book").querySelectorAll("img");
+//var small_images  = document.getElementsByClassName("small-image");
+//var modal  = document.getElementById("modal");
+var large_image = document.getElementById("large-image");
+var close_modal = document.querySelector('#img-container');
+ 
+ for(var i=0; i< small_images.length; i++){
+ 
+ small_images[i].addEventListener("click", function(){
+/*          var src_val = this.src;
+     large_image.src = src_val; */
+      
+      for(var i=0; i< small_images.length; i++){
+      
+      small_images[i].addEventListener("click", function(){
+          var src_val = this.src;
+          var alt_val = this.alt;
+          large_image.src = src_val;
+          large_image.alt = alt_val;
+          myImageModal.open();
+        });
+      }
+   });
+ }
+
+ close_modal.addEventListener("click", function(){
+  myImageModal.close();
+  large_image.src = '';
+  large_image.alt = '';
+});
+
+
 
 
 
