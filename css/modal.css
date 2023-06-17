@@ -260,6 +260,10 @@
       font-size: 1.1rem;
    }
 
+   .modal.image .container {
+      padding: 0.3rem;
+   }
+
    .--border-radius-10 {
       border-radius: 0;
    }

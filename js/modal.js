@@ -277,8 +277,10 @@ var close_modal = document.querySelector('#img-container');
       small_images[i].addEventListener("click", function(){
           var src_val = this.src;
           var alt_val = this.alt;
+          var class_val = this.dataset.bg;
           large_image.src = src_val;
           large_image.alt = alt_val;
+          large_image.classList.add(class_val);
           myImageModal.open();
         });
       }
@@ -289,6 +291,7 @@ var close_modal = document.querySelector('#img-container');
   myImageModal.close();
   large_image.src = '';
   large_image.alt = '';
+  large_image.removeAttribute('class');
 });
 
 

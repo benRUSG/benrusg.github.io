@@ -472,8 +472,10 @@ figcaption {
 }
 
 .stgb-bg {
-   background-color : hsl(195deg 26% 83% / 86%);
-   filter: opacity(0.8);
+   background-color : hsl(195deg 20% 83%);
+}
+.nina-bg {
+   background-color: var(--clr-light);
 }
 
 .--border-radius-10 {
