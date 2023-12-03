@@ -7,9 +7,7 @@
    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
    <title>CVH</title>
    <link rel="stylesheet" href="../css/style.css">
-<!--    <link rel="stylesheet" href="css/top-scroll.css"> -->
    <link rel="stylesheet" href="../css/modal.css">
-<!--    <link rel="stylesheet" href="css/burger.css"> -->
    <link rel="icon" src="favicon.ico" type="image/x-icon">
    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -42,16 +40,32 @@
    <main> 
       <div id="book">
          <section>
-            <h2 class="dont-reveal">Generic</h2>
             <div class="images-container">
-               <img class="dont-reveal" src="../img/cvh/Generic-01.webp" alt="Generic-01" width="800" height="800">
-               <img class="" src="../img/cvh/Generic-02.webp" alt="Generic-02" width="800" height="800" loading="lazy">
-            <h2 class="">Episodes</h2>
-            <img class="" src="../img/cvh/Christine.webp" alt="Christine" width="800" height="800" loading="lazy">
-            <img class="" src="../img/cvh/La-champinionniere.webp" alt="Champignionnière" width="800" height="800" loading="lazy">
-            <img class="" src="../img/cvh/Punk.webp" alt="Punks" width="800" height="800" loading="lazy">
+               <h2 class="dont-reveal">Generic</h2>
+               <picture>
+                  <source srcset="../img/cvh/Generic-01.jpg" />
+                  <img class="dont-reveal" src="../img/cvh/Generic-01.webp" alt="Generic-01" width="800" height="800">
+               </picture>
+               <picture>
+                  <source srcset="../img/cvh/Generic-02.jpg" />
+                  <img class="" src="../img/cvh/Generic-02.webp" alt="Generic-02" width="800" height="800" loading="lazy">
+               </picture>
+               <source srcset="/images/file-name.jpg" />
+               <h2 class="">Episodes</h2>
+               <picture>
+                  <source srcset="../img/cvh/Christine.jpg" />
+                  <img class="" src="../img/cvh/Christine.webp" alt="Christine" width="800" height="800" loading="lazy">
+               </picture>
+               <picture>
+                  <source srcset="../img/cvh/La-champinionniere.jpg" />
+                  <img class="" src="../img/cvh/La-champinionniere.webp" alt="Champignionnière" width="800" height="800" loading="lazy">
+               </picture>
+               <picture>
+                  <source srcset="../img/cvh/Punk.jpg" />
+                  <img class="" src="../img/cvh/Punk.webp" alt="Punks" width="800" height="800" loading="lazy">
+               </picture>
+            </div>
          </section>
-      </div>
    </main>
 
    <div class="modal my-image-modal">
@@ -60,13 +74,11 @@
        </div>
    </div>
 
-  <script src="../js/light-mode-toggle.js"></script>
   <script src="../js/top-scroll.js"></script>
   <script src="../js/modal.js"></script>
   <script>Modal.initElements();</script>
   <script src="../js/localization-script.js"></script>
   <script src="../js/message.js"></script>
   <script src="../js/reveal.js"></script>
-  <script src="../js/burger.js"></script>
   </body>
 </html>
