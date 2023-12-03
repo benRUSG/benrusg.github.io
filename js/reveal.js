@@ -8,7 +8,7 @@ function reveal(){
    for(var i = 0; i < reveals.length; i++){
       var windowheight = window.innerHeight;
       var revealtop = reveals[i].getBoundingClientRect().top;
-      var revealpoint = 10;
+      var revealpoint = 3;
 
       if (!reveals[i].classList.contains('dont-reveal')) {
          if(revealtop < windowheight - revealpoint){
