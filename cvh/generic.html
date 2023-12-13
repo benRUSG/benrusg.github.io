@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+   <title>CVH</title>
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/modal.css">
+   <link rel="icon" src="favicon.ico" type="image/x-icon">
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+   <link rel="manifest" href="../site.webmanifest">
+   <style>
+       .darkmode {
+         --clr-dark: hsl(203.56deg 12.97% 13%);
+      }
+      h1, main {
+         max-width: 800px;
+         margin: auto;
+      }
+      .cvh h1{margin: 2rem auto 0;}
+      .cvh h2{
+         font-weight: 100;
+         width: 100%;
+      }
+      img{
+         margin: 0.8em auto 2em
+      }
+   </style>
+  </head>
+  <body class="darkmode cvh">
+
+   <header>
+      <h1>CVH</h1>
+   </header>
+
+   <main> 
+      <div id="book">
+         <section>
+            <div class="images-container">
+               <h2 class="dont-reveal">Generic</h2>
+               <picture>
+                  <source srcset="../img/cvh/Generic_03.jpg" />
+                  <img class="dont-reveal" src="../img/cvh/Generic_03.webp" alt="Generic-01" width="800" height="800">
+               </picture>
+               <picture>
+                  <source srcset="../img/cvh/Generic_01.jpg" />
+                  <img class="dont-reveal" src="../img/cvh/Generic_01.webp" alt="Generic-01" width="800" height="800">
+               </picture>
+               <picture>
+                  <source srcset="../img/cvh/Generic_02.jpg" />
+                  <img class="" src="../img/cvh/Generic_02.webp" alt="Generic-02" width="800" height="800" loading="lazy">
+               </picture>
+            </div>
+         </section>
+   </main>
+
+   <div class="modal my-image-modal">
+      <div id="img-container" class="container">
+              <img id="large-image" src="" alt="">
+       </div>
+   </div>
+
+  <script src="../js/top-scroll.js"></script>
+  <script src="../js/modal.js"></script>
+  <script>Modal.initElements();</script>
+  <script src="../js/localization-script.js"></script>
+  <script src="../js/message.js"></script>
+  <script src="../js/reveal.js"></script>
+  </body>
+</html>
