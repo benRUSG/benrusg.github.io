@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+   <title>CVH</title>
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/modal.css">
+   <link rel="icon" src="favicon.ico" type="image/x-icon">
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+   <link rel="manifest" href="../site.webmanifest">
+   <style>
+       .darkmode {
+         --clr-dark: hsl(203.56deg 12.97% 13%);
+	      --clr-light: hsl(38.6, 21.9%, 74.9%);
+      }
+      h1{font-size: 3rem;}
+      h2{
+         font-size: 1.8rem;
+         margin-bottom: 0.5em;
+      }
+      h1, main {
+         max-width: 800px;
+         margin: auto;
+      }
+      .cvh h1{margin: 2rem auto 0;}
+      .cvh h2{
+         font-weight: 100;
+         width: 100%;
+      }
+      img{
+         margin: 0.8em auto 2em
+      }
+      .space{margin-top: 3rem;}
+      .full_width{width: 100%; margin-top: 1.8em;}
+   </style>
+  </head>
+  <body class="darkmode cvh">
+
+   <header>
+      <h1>CVH</h1>
+   </header>
+
+   <main> 
+      <div id="book">
+         <section>
+            <div class="images-container">
+               <h2 class="space">Last Episodes Covers</h2>
+               <p>Episode 7: "Revenir au début"</p>
+               <p><i>Still Needed</i></p>
+               <p class="full_width"></p>
+               <p>Episode 8: "Et après"</p>
+               <picture>
+                  <source srcset="../img/cvh/drafts/et_apres1.jpg" />
+                  <img class="dont-reveal" src="../img/cvh/drafts/et_apres1.webp" alt="Punks" width="800" height="800" loading="lazy">
+               </picture>
+               <picture>
+                  <source srcset="../img/cvh/drafts/et_apres2.jpg" />
+                  <img class="dont-reveal" src="../img/cvh/drafts/et_apres2.webp" alt="Punks" width="800" height="800" loading="lazy">
+               </picture>
+            </div>
+         </section>
+   </main>
+
+   <div class="modal my-image-modal">
+      <div id="img-container" class="container">
+              <img id="large-image" src="" alt="">
+       </div>
+   </div>
+
+  <script src="../js/top-scroll.js"></script>
+  <script src="../js/modal.js"></script>
+  <script>Modal.initElements();</script>
+  <script src="../js/localization-script.js"></script>
+  <script src="../js/message.js"></script>
+  <script src="../js/reveal.js"></script>
+  </body>
+</html>
