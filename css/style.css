@@ -197,6 +197,11 @@ li {
    list-style: none;
 }
 
+.full-width {
+	width: 100%;
+	margin-top: 2em;
+}
+
 /*       Lang Switcher - START
  ___________________________________________*/
 
