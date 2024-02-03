@@ -1,0 +1,233 @@
+@font-face {
+    font-family: fm;
+    src: url(../fonts/Aleo/static/Aleo-Light.ttf);
+    font-weight: 200;
+ }
+
+@font-face {
+    font-family: fm;
+    src: url(../fonts/Aleo/static/Aleo-Regular.ttf);
+    font-weight: 400;
+ }
+ 
+ @font-face {
+    font-family: fm;
+    src: url(../fonts/Aleo/static/Aleo-Bold.ttf);
+    font-weight: 900;
+ }
+ 
+ @font-face {
+    font-family: nav;
+    src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+    font-weight: 400;
+ }
+
+ :root {
+    --clr-light: hsl(45deg 8.16% 85.77%);
+    --clr-dark-light: hsl(200, 8.6%, 27.5%);
+    --clr-grey: hsl(0, 0%, 85%);
+    --clr-red: hsl(349, 69%, 42%);
+    --clr-accent-1: hsl(172, 4%, 77%);
+    --clr-accent-2: hsl(40, 100%, 50%);
+  
+    --foreground: var(--clr-dark-light);
+    --background: var(--clr-light);
+ 
+    --close-height: 1.5rem;
+ 
+    --ff: 'fm', sans-serif;
+    --ff-menu: 'nav', sans-serif;
+
+    scroll-behavior: smooth; 
+
+    /* Bootstrap */
+    --bs-border-width: 0;
+  }
+
+/* reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+ }
+
+
+*::selection {
+color: var(--background);
+background-color: var(--clr-red);
+}
+
+/* reset end */
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--ff);
+/*     padding: 0 0.8em; */
+    transition: all 500ms;
+ }
+
+header {
+    font-family: var(--ff-menu);
+    font-size: 1.3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em;
+ }
+
+header a:hover {
+    border-bottom: 0.5em solid var(--foreground);
+}
+ 
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.logo svg {
+    fill: var(--foreground);
+ }
+
+/*       Lang Switcher - START
+ ___________________________________________*/
+
+ .locale-switcher {
+    color: var(--clr-accent);
+    font-size: inherit;
+    letter-spacing: 0.04em;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: var(--bs-nav-link-padding-y) 0 var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    height: max-content;
+/*     -webkit-appearance: none;
+    -moz-appearance: none;
+     appearance: none; */
+  }
+ 
+ 
+ 
+  .locale-switcher:focus-visible {
+    border: none;
+    outline: none;
+  }
+ 
+  select.locale-switcher::after {
+    display: inline-block;
+    content: '';
+    transform: translateY(-30%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
+    margin-left: 0.7em;
+  }
+ 
+ /* ___________________________________________*/
+
+  
+
+/*   .carousel-indicators {
+    position: inherit;
+  } */
+
+/*  Bootstrap Override */
+
+
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.nav-link {
+    padding: 0;
+}
+
+.nav-link, .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--clr-dark-light);
+    background-color: inherit;
+    border: none;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    color: var(--clr-dark-light);
+    border: none;
+}
+
+.nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.sub-nav {
+    display: flex;
+    gap: 1.5em;
+}
+
+/* *** */
+
+.hero-slide {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - var(--sl-header-height));
+ }
+
+ .fade {
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+
+.fade:not(.active) {
+    display: block;
+    opacity: 0;
+    -webkit-transition: opacity 0.3 linear;
+       -moz-transition: opacity 0.3 linear;
+        -ms-transition: opacity 0.3 linear;
+         -o-transition: opacity 0.3 linear;
+            transition: opacity 0.3 linear;
+  }
+ 
+ 
