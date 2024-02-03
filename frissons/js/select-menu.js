@@ -5,7 +5,7 @@ const options = [...document.querySelectorAll('.options .item')];
 let activeOption = 0; // default should be 0
 
 window.onclick = (e) => {
-    if(!e.target.classList.contains('select')){
+    if(!e.target.className.is('select')){
         select.classList.remove('active');
         optionBox.classList.remove('active');
     } else{

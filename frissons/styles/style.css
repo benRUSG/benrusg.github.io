@@ -220,7 +220,7 @@ nav {
     transition-duration: 0.3s;
 }
 
-.fade:not(.active) {
+/* .fade:not(.active) {
     display: block;
     opacity: 0;
     -webkit-transition: opacity 0.3 linear;
@@ -230,4 +230,4 @@ nav {
             transition: opacity 0.3 linear;
   }
  
- 
+  */
