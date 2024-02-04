@@ -1,29 +1,29 @@
 @font-face {
-    font-family: fm;
+    font-family: aleo;
     src: url(../fonts/Aleo/static/Aleo-Light.ttf);
     font-weight: 200;
  }
 
 @font-face {
-    font-family: fm;
+    font-family: aleo;
     src: url(../fonts/Aleo/static/Aleo-Regular.ttf);
     font-weight: 400;
  }
  
  @font-face {
-    font-family: fm;
+    font-family: aleo;
     src: url(../fonts/Aleo/static/Aleo-Bold.ttf);
     font-weight: 900;
  }
  
  @font-face {
-    font-family: nav;
+    font-family: bebas;
     src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
     font-weight: 400;
  }
 
  :root {
-    --clr-light: hsl(45deg 8.16% 85.77%);
+    --clr-light: hsl(40deg 13% 91%);
     --clr-dark-light: hsl(200, 8.6%, 27.5%);
     --clr-grey: hsl(0, 0%, 85%);
     --clr-red: hsl(349, 69%, 42%);
@@ -35,8 +35,8 @@
  
     --close-height: 1.5rem;
  
-    --ff: 'fm', sans-serif;
-    --ff-menu: 'nav', sans-serif;
+    --ff: 'aleo', sans-serif;
+    --ff-alt: 'bebas', sans-serif;
 
     scroll-behavior: smooth; 
 
@@ -95,7 +95,7 @@ body {
  }
 
 header {
-    font-family: var(--ff-menu);
+    font-family: var(--ff-alt);
     font-size: 1.3rem;
     max-width: 1000px;
     margin: 0 auto;
@@ -154,9 +154,17 @@ header a:hover {
 
   
 
-/*   .carousel-indicators {
-    position: inherit;
-  } */
+ .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+	color: var(--clr-red);
+}
+.carousel-control-prev,
+.carousel-control-next {
+  color: var(--clr-red);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators [data-bs-target] {
+    background-color: var(--foreground);
+}
 
 /*  Bootstrap Override */
 
