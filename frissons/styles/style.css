@@ -224,7 +224,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: calc(100vh - var(--sl-header-height));
+    height: calc(100svh - var(--sl-header-height));
  }
 
  .fade {
