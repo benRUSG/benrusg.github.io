@@ -42,3 +42,11 @@
 .options .item{
    cursor: pointer;
 }
+
+@media screen and (max-width:650px){
+   
+   .select::after {
+       margin-left: 0.25em;
+   }
+
+}
