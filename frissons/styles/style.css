@@ -277,7 +277,7 @@ nav {
 }
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-    color: var(--clr-dark-light);
+    color: var(--foreground);
     border: none;
 }
 

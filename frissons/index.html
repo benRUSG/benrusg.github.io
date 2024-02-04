@@ -957,44 +957,45 @@
               </svg>
             </button>
           </li>
-          <li id="main-menu">
-            <div id="burger-container"> 
-              <div id="burger">
-                 <span></span>
-                 <span></span>
-                 <span></span>
-              </div>
-           </div>
+          <li id="menu-wrapper">
             <ul class="sub-nav">
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="work-tab" data-bs-toggle="tab" data-bs-target="#work-tab-pane" type="button" role="tab" aria-controls="work-tab-pane" aria-selected="false">Our Work</button>
+                <button onclick="toogleMenu()" class="nav-link" id="work-tab" data-bs-toggle="tab" data-bs-target="#work-tab-pane" type="button" role="tab" aria-controls="work-tab-pane" aria-selected="false">Our Work</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="false">About</button>
+                <button onclick="toogleMenu()" class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="false">About</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                <button onclick="toogleMenu()" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
               </li>
             </ul>
+            <div class="lang-selector">
+  <!--                 <select data-i18n-switcher class="locale-switcher form-select" name="select" class="" aria-label="Default select">
+              <option value="en">en</option>
+              <option value="fr">fr</option>
+            </select> -->
+              <button class="select" name="select" value="options">EN</button>
+              <ul class="options">
+                  <li class="item active">EN</li>
+                  <li class="item">FR</li>
+              </ul>
+            </div>
+            <div>
+              <button id="dark-mode-toggle" class="dark-mode-toggle">
+                <i class="toggle-ico"></i>
+                <!-- <p class="toggle-title">mode</p> -->
+              </button>
+            </div>
           </li>
+          <li id="burger-container" class="on"> 
+            <div id="burger">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </li>
         </ul>
-        <div class="lang-selector">
-<!--                 <select data-i18n-switcher class="locale-switcher form-select" name="select" class="" aria-label="Default select">
-            <option value="en">en</option>
-            <option value="fr">fr</option>
-          </select> -->
-          <button class="select" name="select" value="options">EN</button>
-          <ul class="options">
-              <li class="item active">EN</li>
-              <li class="item">FR</li>
-          </ul>
-        </div>
-        <div>
-          <button id="dark-mode-toggle" class="dark-mode-toggle">
-            <i class="toggle-ico"></i>
-            <!-- <p class="toggle-title">mode</p> -->
-         </button>
-        </div>
+
 
       </nav>
     </header>
@@ -1072,6 +1073,7 @@
     </div>
     
     <script src="../frissons/js/script.js"></script>
+    <script src="../frissons/js/burger.js"></script>
     <script src="../frissons/js/light-mode-toggle.js"></script>
     <script src="../frissons/js/select-menu.js"></script>
 </body>
