@@ -21,7 +21,7 @@
 
 .lang-selector{
    position: relative;
-   min-width: 3em;
+   min-width: 2em;
     display: flex;
     justify-content: center;
 }

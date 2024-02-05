@@ -1,0 +1,66 @@
+{
+  "about": "about",
+  "contact": "contact",
+
+
+  "portfolio": "portfolio",
+
+
+  "tb-info-link": "Podcast produced by RTBF & Vivacité - 2023",
+
+
+  "pao": "graphic design",
+  "photo": "photography",
+  "web": "webdesign",
+  "print": "print",
+  "poster": "poster",
+
+  "generic": "main visual",
+  "auvio": "AUVIO visuals",
+  "episodes": "episodes visuals",
+  "yt": "Youtube visuals",
+
+
+  "stgb": "Belgian Rockabilly Band",
+  "front-cover-45": "eponym 45rpm record front cover",
+  "back-cover": "back cover",
+  "front-cover-sittin": "Sittin' Pretty front cover",
+  "saroyan": "Saroyan music label logo",
+  "fb": "Facebook banner",
+
+
+  "ets": "Belgian yéyé twist surf band",
+  "ets-45": "7\" record",
+
+
+  "lpn": "Handmade Clothing Design",
+  "vc": "Visit cards",
+  "logo": "logo",
+  "logos": "logos",
+
+
+  "bxl": "Brussels",
+
+
+  "frenesie": "Flower & Vintage Shop",
+
+  "boem": "Flower & Vintage Shop",
+
+
+  "contact-form-hi": "Hi there!",
+  "contact-form-msg": "Feel free to conatct me, I'll get back to you asap.",
+  "contact-form-firstname": "Firstname",
+  "ph-firstname": "John",
+  "contact-form-name": "Name",
+  "ph-name": "Doe",
+  "contact-form-email": "email",
+  "ph-email": "john.doe@gmail.com",
+  "contact-form-message": "",
+  "ph-message": "Message",
+  "send": "Send",
+
+  "msg-sent-title": "Your message has been successfully sent!",
+  "msg-sent-msg": "I'll get back to you asap.",
+  "msg-sent-msg-end": "Have a nice day!"
+}
+

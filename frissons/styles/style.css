@@ -20,6 +20,7 @@
     font-family: bebas;
     src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
     font-weight: 400;
+    font-display: swap;
  }
 
  :root {
@@ -168,6 +169,14 @@ body {
     transition: all 500ms;
  }
 
+h1, h2, h3, h4 {
+    font-family: var(--ff-alt);
+}
+
+p {
+    font-weight: 200;
+}
+
 header {
     font-family: var(--ff-alt);
     font-size: 1.3rem;
@@ -187,6 +196,17 @@ header a:hover {
 
 .logo svg {
     fill: var(--foreground);
+ }
+
+/* #carousel-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+ .content {
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    padding: 0 1rem;
  }
 
 /*       Lang Switcher - START
@@ -293,6 +313,7 @@ nav {
 .sub-nav {
     display: flex;
     gap: 1.5em;
+    align-items: center;
 }
 
 /* *** */
@@ -319,8 +340,55 @@ nav {
          -o-transition: opacity 0.3 linear;
             transition: opacity 0.3 linear;
   } */
+#contact {
+    text-align: center;
+}
+form.email {
+    display: grid;
+    max-width: 50%;
+    margin: 0 auto;
+    gap: 1.5rem;
+    text-align: left;
+    margin-top: 3em;
+}
+
+#contact h1 {
+    margin-bottom: 1em;
+}
+
+form.email div {
+    display: grid;
+}
+
+form.email label {
+    padding-left: 1em;
+}
+
+form.email div.submit {
+    display: grid;
+    justify-content: center;
+}
+
+.submit button {
+    padding: 0.8em 1.5em;
+    border: none;
+    background: var(--foreground);
+    color: var(--background);
+}
+
+form.email input {
+    padding: 0.8em 1em;
+    background: var(--foreground);
+    border: none;
+    color: var(--background);
+}
+
+input.message {
+    min-height: 12rem;
+}
+
  
-  @media screen and (max-width:650px){
+@media screen and (max-width:650px){
     nav {
         gap: 0.3em;
     }
@@ -330,6 +398,22 @@ nav {
     
     .logo {
         width: 130px;
+    }
+
+    form.email {
+        max-width: 64%;
+        margin-top: 2em;
+    }
+    .content {
+        margin: 2rem auto 0;
+    }
+
+ }
+
+ 
+@media screen and (max-width:470px){
+    form.email {
+        max-width: 87%;
     }
 
  }

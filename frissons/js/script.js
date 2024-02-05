@@ -14,6 +14,8 @@ function checkHeaderHeight() {
     const header = document.querySelector('header');
     // get rendered styles
     const styles = window.getComputedStyle(header);
+    // Distance
+    // const dist = 20;
     // set header height rendered style
     const headerHeight = styles.height;
     // set CSS as a value
