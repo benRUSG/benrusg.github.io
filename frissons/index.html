@@ -961,13 +961,13 @@
           <li id="menu-wrapper">
             <ul class="sub-nav">
               <li class="nav-item" role="presentation">
-                <button onclick="toogleMenu()" class="nav-link" id="work-tab" data-bs-toggle="tab" data-bs-target="#work-tab-pane" type="button" role="tab" aria-controls="work-tab-pane" aria-selected="false">Our Work</button>
+                <button onclick="toogleMenu()" class="nav-link" id="work-tab" data-bs-toggle="tab" data-bs-target="#work-tab-pane" type="button" role="tab" aria-controls="work-tab-pane" aria-selected="false" data-i18n-key="work"></button>
               </li>
               <li class="nav-item" role="presentation">
-                <button onclick="toogleMenu()" class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="false">About</button>
+                <button onclick="toogleMenu()" class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="false" data-i18n-key="about"></button>
               </li>
               <li class="nav-item" role="presentation">
-                <button onclick="toogleMenu()" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                <button onclick="toogleMenu()" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false" data-i18n-key="contact"></button>
               </li>
               <li>
                  <div class="lang-selector" name="select">
@@ -1073,29 +1073,28 @@
           <section id="about" class="tab">
             <h1>About</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, perferendis deserunt minima corporis quaerat expedita beatae iste aliquam voluptas. Veritatis dolorum quidem consectetur tempore ipsum delectus quas? Assumenda, ex voluptas!</p>
-            <span data-i18n-key="stgb"></span>
           </section>
         </div>
         <div class="content tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
           <section id="contact" class="tab">
-            <h1>We can’t wait to hear from You!</h1>
+            <h1 data-i18n-key="contact-form-hi"></h1>
             <p>Whatever you have a story to share, a cold case you want to be resolved or just want to wave us?<br>Feel free to use the contact form below.</p>
             <form class="email" action="https://getform.io/f/9c1ae211-fed7-4d7e-9109-91a98c2973a7" method="POST">
               <div>
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName" autocomplete="given-name" required>
+                <label for="firstName" data-i18n-key="contact-form-firstname">First Name</label>
+                <input type="text" name="firstName" id="firstName" autocomplete="name" required  placeholder="Jhon" data-i18n-key="contact-form-firstname" data-i18n-ph="ph-firstname">
               </div>
               <div>
-                <label for="lastName">Name</label>
-                <input type="text" name="lastName" id="lastName" autocomplete="family-name" required>
+                <label for="lastName" data-i18n-key="contact-form-name">Name</label>
+                <input type="text" name="lastName" id="lastName" autocomplete="family-name" required placeholder="Doe" data-i18n-key="contact-form-name" data-i18n-ph="ph-name">
               </div>
               <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" autocomplete="off" required>
+                <label for="email" data-i18n-key="contact-form-email">Email</label>
+                <input type="email" name="email" id="email" autocomplete="email" required data-i18n-key="contact-form-email" data-i18n-ph="ph-email">
               </div>
               <div>
-                <label for="message">Message</label>
-                <input class="message" type="text" name="message" id="message" cols="40" rows="10" required>
+                <label for="message" data-i18n-key="contact-form-message">Message</label>
+                <input class="message" type="text" name="message" id="message" cols="40" rows="10" required data-i18n-key="contact-form-message"  data-i18n-ph="ph-message" placeholder="Message">
                 <input type="hidden" name="preferences" style="display:none !important">
               </div>
               <div class="submit">

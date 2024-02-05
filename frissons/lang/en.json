@@ -1,59 +1,16 @@
 {
-  "about": "about",
-  "contact": "contact",
+  "_Titles": "",
+  "work": "Our Work",
+  "about": "About",
+  "contact": "Contact",
 
-
-  "portfolio": "portfolio",
-
-
-  "tb-info-link": "Podcast produced by RTBF & Vivacité - 2023",
-
-
-  "pao": "graphic design",
-  "photo": "photography",
-  "web": "webdesign",
-  "print": "print",
-  "poster": "poster",
-
-  "generic": "main visual",
-  "auvio": "AUVIO visuals",
-  "episodes": "episodes visuals",
-  "yt": "Youtube visuals",
-
-
-  "stgb": "Belgian Rockabilly Band",
-  "front-cover-45": "eponym 45rpm record front cover",
-  "back-cover": "back cover",
-  "front-cover-sittin": "Sittin' Pretty front cover",
-  "saroyan": "Saroyan music label logo",
-  "fb": "Facebook banner",
-
-
-  "ets": "Belgian yéyé twist surf band",
-  "ets-45": "7\" record",
-
-
-  "lpn": "Handmade Clothing Design",
-  "vc": "Visit cards",
-  "logo": "logo",
-  "logos": "logos",
-
-
-  "bxl": "Brussels",
-
-
-  "frenesie": "Flower & Vintage Shop",
-
-  "boem": "Flower & Vintage Shop",
-
-
-  "contact-form-hi": "Hi there!",
+  "contact-form-hi": "We can’t wait to hear from You!",
   "contact-form-msg": "Feel free to conatct me, I'll get back to you asap.",
   "contact-form-firstname": "Firstname",
   "ph-firstname": "John",
   "contact-form-name": "Name",
   "ph-name": "Doe",
-  "contact-form-email": "email",
+  "contact-form-email": "Email",
   "ph-email": "john.doe@gmail.com",
   "contact-form-message": "",
   "ph-message": "Message",

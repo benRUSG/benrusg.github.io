@@ -155,7 +155,7 @@ a {
 
 
 *::selection {
-color: var(--background);
+color: var(--clr-light);
 background-color: var(--clr-red);
 }
 
