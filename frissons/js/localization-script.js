@@ -223,20 +223,15 @@ function bindLocaleSwitcher(initialValue) {
   const switcherOption = document.querySelectorAll('.lang-item');
 
   switcher.value = initialValue;
-
-/*   switcher.onchange = (e) => {
-    setLocale(switcher.innerText);
-  }; */
-  switcherOption.onclick = function () {
-    setLocale(switcherOption.innerText);
-    console.log(this.value);
-  };
-/* 
-
-switcher.querySelectorAll('.options').onclick
-switcher.onchange = (e) => {
-    setLocale(e.target.value);
-  }; */
+        
+  for(var i =0; i < switcherOption.length; i++) {
+      (function(i) {
+        switcherOption[i].onclick = function() { 
+          setLocale(this.innerText);
+          console.log(this.innerText)
+        };   
+       })(i);
+   }
 }
 
 /**
