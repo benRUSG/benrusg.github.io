@@ -387,6 +387,18 @@ input.message {
     min-height: 12rem;
 }
 
+::-webkit-input-placeholder {
+    font-style: italic;
+ }
+ :-moz-placeholder {
+    font-style: italic;  
+ }
+ ::-moz-placeholder {
+    font-style: italic;  
+ }
+ :-ms-input-placeholder {  
+    font-style: italic; 
+ }
  
 @media screen and (max-width:650px){
     nav {
