@@ -14,6 +14,16 @@ window.onclick = (e) => {
     }
 }
 
+window.ontouchstart = (e) => {
+    if(!e.target.classList.contains('select')){
+        select.classList.remove('active');
+        optionBox.classList.remove('active');
+    } else{
+        select.classList.toggle('active');
+        optionBox.classList.toggle('active');
+    }
+}
+
 options.forEach((item, i) => {
     item.onmousemove = () => {
         hoverOptions(i);
