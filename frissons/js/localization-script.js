@@ -228,7 +228,6 @@ function bindLocaleSwitcher(initialValue) {
       (function(i) {
         switcherOption[i].onclick = function() { 
           setLocale(this.innerText);
-          console.log(this.innerText)
         };   
        })(i);
    }
