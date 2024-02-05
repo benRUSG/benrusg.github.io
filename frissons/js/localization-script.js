@@ -226,18 +226,18 @@ function bindLocaleSwitcher(initialValue) {
         
   for(var i =0; i < switcherOption.length; i++) {
       (function(i) {
-        switcherOption[i].onclick = function() { 
+        switcherOption[i].onmousedown = function() { 
           setLocale(this.innerText);
         };   
        })(i);
    }
-  for(var i =0; i < switcherOption.length; i++) {
+/*   for(var i =0; i < switcherOption.length; i++) {
       (function(i) {
         switcherOption[i].ontouchstart = function() { 
           setLocale(this.innerText);
         };   
        })(i);
-   }
+   } */
 }
 
 /**
