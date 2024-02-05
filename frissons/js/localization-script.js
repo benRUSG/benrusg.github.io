@@ -231,6 +231,13 @@ function bindLocaleSwitcher(initialValue) {
         };   
        })(i);
    }
+  for(var i =0; i < switcherOption.length; i++) {
+      (function(i) {
+        switcherOption[i].ontouchstart = function() { 
+          setLocale(this.innerText);
+        };   
+       })(i);
+   }
 }
 
 /**
