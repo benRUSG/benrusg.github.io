@@ -970,15 +970,15 @@
                 <button onclick="toogleMenu()" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
               </li>
               <li>
-                 <div data-i18n-switcher class="locale-switcher lang-selector" name="select">
-      <!--                 <select data-i18n-switcher class="locale-switcher form-select" name="select" class="" aria-label="Default select">
+                 <div class="lang-selector" name="select">
+<!--                       <select data-i18n-switcher class="locale-switcher form-select" name="select" class="" aria-label="Default select">
                   <option value="en">en</option>
                   <option value="fr">fr</option>
                 </select> -->
-                  <button class="select" name="select" value="options">EN</button>
+                  <button data-i18n-switcher class="select" name="select" value="options">EN</button>
                   <ul class="options">
-                      <li class="item active">EN</li>
-                      <li class="item">FR</li>
+                      <li class="lang-item item active">EN</li>
+                      <li class="lang-item item">FR</li>
                   </ul>
                 </div>
               </li>
@@ -1073,7 +1073,7 @@
           <section id="about" class="tab">
             <h1>About</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, perferendis deserunt minima corporis quaerat expedita beatae iste aliquam voluptas. Veritatis dolorum quidem consectetur tempore ipsum delectus quas? Assumenda, ex voluptas!</p>
-            <span data-i18n-key="pao"></span>
+            <span data-i18n-key="stgb"></span>
           </section>
         </div>
         <div class="content tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
@@ -1082,16 +1082,20 @@
             <p>Whatever you have a story to share, a cold case you want to be resolved or just want to wave us?<br>Feel free to use the contact form below.</p>
             <form class="email" action="https://getform.io/f/9c1ae211-fed7-4d7e-9109-91a98c2973a7" method="POST">
               <div>
-                <label for="name">Name</label>
-                <input type="text" name="name" required>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" autocomplete="given-name" required>
               </div>
               <div>
-                <label for="name">Email</label>
-                <input type="email" name="email" required>
+                <label for="lastName">Name</label>
+                <input type="text" name="lastName" id="lastName" autocomplete="family-name" required>
               </div>
               <div>
-                <label for="name">Message</label>
-                <input class="message" type="text" name="message" cols="40" rows="10" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" autocomplete="off" required>
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <input class="message" type="text" name="message" id="message" cols="40" rows="10" required>
                 <input type="hidden" name="preferences" style="display:none !important">
               </div>
               <div class="submit">
@@ -1104,6 +1108,7 @@
     </main>
     
     <script src="../frissons/js/script.js"></script>
+    <script src="../frissons/js/localization-script.js"></script>
     <script src="../frissons/js/burger.js"></script>
     <script src="../frissons/js/light-mode-toggle.js"></script>
     <script src="../frissons/js/select-menu.js"></script>

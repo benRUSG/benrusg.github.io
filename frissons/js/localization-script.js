@@ -72,7 +72,7 @@ async function setLocale(newLocale) {
 // Retrieves translations JSON object for the given
 // locale over the network
 async function fetchTranslationsFor(newLocale) {
-  const response = await fetch(`/lang/${newLocale}.json`);
+  const response = await fetch(`/frissons/lang/${newLocale}.json`);
   return await response.json();
 }
 
@@ -220,12 +220,23 @@ function bindLocaleSwitcher(initialValue) {
   const switcher = document.querySelector(
     "[data-i18n-switcher]",
   );
+  const switcherOption = document.querySelectorAll('.lang-item');
 
   switcher.value = initialValue;
 
-  switcher.onchange = (e) => {
-    setLocale(e.target.innerText);
+/*   switcher.onchange = (e) => {
+    setLocale(switcher.innerText);
+  }; */
+  switcherOption.onclick = function () {
+    setLocale(switcherOption.innerText);
+    console.log(this.value);
   };
+/* 
+
+switcher.querySelectorAll('.options').onclick
+switcher.onchange = (e) => {
+    setLocale(e.target.value);
+  }; */
 }
 
 /**
