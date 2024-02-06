@@ -50,4 +50,9 @@
        margin-left: 0.25em;
    }
 
+   .select::after{
+      border-right: 2px solid var(--background);
+      border-bottom: 2px solid var(--background);
+   }
+
 }
