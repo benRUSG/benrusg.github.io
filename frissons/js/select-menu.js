@@ -4,7 +4,7 @@ const options = [...document.querySelectorAll('.options .item')];
 
 let activeOption = 0; // default should be 0
 
-window.onclick = (e) => {
+/* window.onclick = (e) => {
     if(!e.target.classList.contains('select')){
         select.classList.remove('active');
         optionBox.classList.remove('active');
@@ -12,9 +12,10 @@ window.onclick = (e) => {
         select.classList.toggle('active');
         optionBox.classList.toggle('active');
     }
-}
+} */
 
-window.ontouchstart = (e) => {
+// Had to change onclick to addEventListener cause not working on mobile
+window.addEventListener("click", function(e) {
     if(!e.target.classList.contains('select')){
         select.classList.remove('active');
         optionBox.classList.remove('active');
@@ -22,7 +23,7 @@ window.ontouchstart = (e) => {
         select.classList.toggle('active');
         optionBox.classList.toggle('active');
     }
-}
+});
 
 options.forEach((item, i) => {
     item.onmousemove = () => {
