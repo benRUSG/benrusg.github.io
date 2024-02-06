@@ -248,7 +248,7 @@ header a:hover {
     background: var(--background);
     padding: 0.3em 0.5em;
 }
- 
+
 .lang-selector .item:first-child  {
     border-bottom: 1px solid var(--foreground);
 }
@@ -438,6 +438,10 @@ input.message {
      }
      .dark-mode-toggle {
         color: var(--background);
+    }
+
+    .lang-selector .item:first-child  {
+        border-bottom: 1px solid var(--foreground);
     }
  }
 
