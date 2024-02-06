@@ -441,7 +441,7 @@ input.message {
     }
 
     .lang-selector .item:first-child  {
-        border-bottom: 1px solid var(--foreground);
+        border-bottom: 1px solid var(--background);
     }
  }
 
