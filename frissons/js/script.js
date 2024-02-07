@@ -13,7 +13,7 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
 
 // Hero Carousel Height
 
-/* // check header height
+// check header height
 function checkHeaderHeight() {
     // select header element
     const header = document.querySelector('header');
@@ -23,11 +23,15 @@ function checkHeaderHeight() {
     // const dist = 20;
     // set header height rendered style
     const headerHeight = styles.height;
+    // Target
+    //const t = document.querySelector('.full-height');
     // set CSS as a value
-    document.documentElement.style.setProperty("--sl-header-height", headerHeight);
+     document.querySelector('.full-height').style.setProperty("height", 'calc( 100svh - ' + headerHeight + ')');
+//     document.querySelector('.full-height').style.setProperty("--sl-header-height", headerHeight); */
+/*     document.querySelector('.full-height').style.setProperty("--sl-header-height", headerHeight); */
   }
   addEventListener("resize", checkHeaderHeight);
   addEventListener("orientationchange", checkHeaderHeight);
-  checkHeaderHeight(); */
+  checkHeaderHeight();
 
   

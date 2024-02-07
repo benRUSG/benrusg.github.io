@@ -30,6 +30,10 @@
     --clr-red: hsl(349, 69%, 42%);
     --clr-accent-1: hsl(172, 4%, 77%);
     --clr-accent-2: hsl(40, 100%, 50%);
+    --clr-slide-1: hsl(42.6, 41.3%, 36.1%);
+    --clr-slide-2: hsl(49, 41%, 43%);
+    --clr-slide-3: hsl(201, 41%, 36%);
+    --clr-slide-4: hsl(24, 54%, 33%);
   
     --foreground: var(--clr-dark-light);
     --background: var(--clr-light);
@@ -417,6 +421,7 @@ input.message {
     font-style: italic; 
  }
 
+/*  Carousel Hero Section  */
 
  .hero-grid{
     background-color: burlywood;
@@ -441,9 +446,32 @@ input.message {
 }
 
 .hero-punch{
+    font-family: var(--ff-alt);
+    color: var(--background);
+    font-size: 4rem;
+    text-align: center;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
 }
+
+.slide-1 {
+    background-color: var(--clr-slide-1);
+}
+
+.slide-2 {
+    background-color: var(--clr-slide-2);
+}
+
+.slide-3 {
+    background-color: var(--clr-slide-3);
+}
+
+.slide-4 {
+    background-color: var(--clr-slide-4);
+}
+
+/* ***** */
+
 @media screen and (max-width:470px){
     .grid{
         grid-template-columns: 1fr;
