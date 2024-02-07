@@ -416,6 +416,51 @@ input.message {
  :-ms-input-placeholder {  
     font-style: italic; 
  }
+
+
+ .hero-grid{
+    background-color: burlywood;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 1em;
+}
+.hero-image {
+    --widht: 50vw;
+    width: var(--widht);
+    height: var(--widht);
+    max-height: 95vh;
+    max-width: 95vh;
+    background-color: tomato;
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    /* margin: 1em; */
+}
+
+.hero-punch{
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+@media screen and (max-width:470px){
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .hero-punch{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    .hero-image{
+        --widht: 100vw;
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+}
+
+
  
 @media screen and (max-width:650px){
     nav {

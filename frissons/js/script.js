@@ -1,10 +1,15 @@
 // Carousel
-const myCarouselElement = document.querySelector('#carousel-hero')
+const myCarouselElement = document.querySelector('#carouselExampleRide')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 6000
+})
+/* const myCarouselElement = document.querySelector('#carousel-hero')
 
 const carousel = new bootstrap.Carousel(myCarouselElement, {
   interval: 4000
 })
-
+ */
 
 // Hero Carousel Height
 
