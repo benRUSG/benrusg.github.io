@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        .grid{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 3% 1fr 1fr 3%;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+        }
+        .image{
+            width: 42vw;
+            height: 42vw;
+            background-color: tomato;
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+
+        .text{
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        @media screen and (max-width:470px){
+            .grid{
+                grid-template-rows: 3% 1fr 1fr 3%;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .image{
+                grid-column: 2 / 3;
+                grid-row: 3 / 4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="text">bla bla</div>
+        <div class="image"></div>
+    </div>
+    
+</body>
+</html>
