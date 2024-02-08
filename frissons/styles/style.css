@@ -30,10 +30,6 @@
     --clr-red: hsl(349, 69%, 42%);
     --clr-accent-1: hsl(172, 4%, 77%);
     --clr-accent-2: hsl(40, 100%, 50%);
-    --clr-slide-1: hsl(42.6, 41.3%, 36.1%);
-    --clr-slide-2: hsl(49, 41%, 43%);
-    --clr-slide-3: hsl(201, 41%, 36%);
-    --clr-slide-4: hsl(24, 54%, 33%);
   
     --foreground: var(--clr-dark-light);
     --background: var(--clr-light);
@@ -423,26 +419,36 @@ input.message {
 
 /*  Carousel Hero Section  */
 
+#hero {
+    --clr-slide-1: hsl(35.6deg 7.19% 47.04%);
+    --clr-slide-2: hsl(49, 41%, 43%);
+    --clr-slide-3: hsl(201, 41%, 36%);
+    --clr-slide-4: hsl(24, 54%, 33%);
+}
+
  .hero-grid{
     background-color: burlywood;
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
-    padding: 1em;
+/*     padding: 1em; */
 }
 .hero-image {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+}
+
+.hero-image img{
     --widht: 50vw;
     width: var(--widht);
     height: var(--widht);
     max-height: 95vh;
     max-width: 95vh;
-    background-color: tomato;
-    grid-column: 2 / 3;
-    grid-row: 1 / -1;
-    /* margin: 1em; */
+    object-fit: contain;
+    margin: 1em;
 }
 
 .hero-punch{
@@ -472,19 +478,23 @@ input.message {
 
 /* ***** */
 
-@media screen and (max-width:470px){
-    .grid{
+@media screen and (max-width:801px){
+    .hero-grid{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 30% 1fr;
+        padding: 0;
     }
     .hero-punch{
         grid-column: 1 / -1;
         grid-row: 1 / 2;
     }
     .hero-image{
-        --widht: 100vw;
         grid-column: 1 / -1;
         grid-row: 2 / 3;
+    }
+    .hero-image img{
+        --widht: 94vw;
+        margin: 0;
     }
 }
 
