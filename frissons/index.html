@@ -1013,7 +1013,7 @@
       <div class="tab-content">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
           <section id="hero" class="tab tab-active">
-            <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
               <div class="carousel-inner">
 <!--                 <div class="carousel-item active">
                   <div class="hero-grid slide-1">
@@ -1036,12 +1036,23 @@
                       <h1>
                         compelling <br>stories
                       </h1>
+                      <style>.tab{padding-left: 2em;}</style>
+                      <ul style="font-size: 14px;font-style: initial;font-family: var(--ff);text-align: left;">
+                        <li>-> media querries: --dim =</li>
+                        <li class="tab">if horizontal > x-vh </li>
+                        <li class="tab">@media screen and (orientation:portrait) { … } + gtc gtr of parent </li>
+                        <li class="tab">if vertical x-vw </li>
+                        <li class="tab">@media screen and (orientation:landscape) { … } + gtc gtr of parent </li>
+                        <li></li>
+                        <br>
+                        <li> remove height from img html height tag</li>
+                      </ul>
                     </div>
                     <div class="hero-image">
                       <picture>
                         <source srcset="../frissons/img/cvh_800.webp" />
                         <source srcset="../frissons/img/cvh_800.jpg" />
-                        <img class="" src="../frissons/img/cvh_800.jpg" alt="" width="800" height="800" loading="Le Meurtre De La Champignonière podcast's cover ">
+                        <img class=".img-fluid" src="../frissons/img/cvh_800.jpg" alt=""  loading="Le Meurtre De La Champignonière podcast's cover ">
                       </picture>
                     </div>
                   </div>
@@ -1053,7 +1064,7 @@
                       <picture>
                         <source srcset="../frissons/img/TueursDuBrabant_800.webp" />
                         <source srcset="../frissons/img/TueursDuBrabant_800.jpg" />
-                        <img class="" src="../frissons/img/TueursDuBrabant_800.jpg" alt="Les Tueurs Du Brabant podcast's cover" width="800" height="800" loading="">
+                        <img class=".img-fluid" src="../frissons/img/TueursDuBrabant_800.jpg" alt="Les Tueurs Du Brabant podcast's cover"  loading="">
                       </picture>
                     </div>
                   </div>
@@ -1065,7 +1076,7 @@
                       <picture>
                         <source srcset="../frissons/img/lemonstre_cover_final_web_800.webp" />
                         <source srcset="../frissons/img/lemonstre_cover_final_web_800.jpg" />
-                        <img class="" src="../frissons/img/lemonstre_cover_final_web_800.jpg" alt="Le Monstre podcast's cover" width="800" height="800" loading="">
+                        <img class=".img-fluid" src="../frissons/img/lemonstre_cover_final_web_800.jpg" alt="Le Monstre podcast's cover"  loading="">
                       </picture>
                     </div>
                   </div>
@@ -1077,7 +1088,7 @@
                       <picture>
                         <source srcset="../frissons/img/hairy_800.webp" />
                         <source srcset="../frissons/img/hairy_800.jpg" />
-                        <img class="" src="../frissons/img/hairy_800.jpg" alt="Hairy podcast's cover" width="800" height="800" loading="">
+                        <img class=".img-fluid" src="../frissons/img/hairy_800.jpg" alt="Hairy podcast's cover"  loading="">
                       </picture>
                     </div>
                   </div>

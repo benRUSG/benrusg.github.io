@@ -434,7 +434,6 @@ input.message {
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
-/*     padding: 1em; */
 }
 .hero-image {
     grid-column: 2 / 3;
@@ -442,13 +441,12 @@ input.message {
 }
 
 .hero-image img{
-    --widht: 50vw;
-    width: var(--widht);
-    height: var(--widht);
+/*    width: var(--dim);
+     height: var(--dim);
     max-height: 95vh;
     max-width: 95vh;
     object-fit: contain;
-    margin: 1em;
+    margin: 1em; */
 }
 
 .hero-punch{
@@ -477,6 +475,34 @@ input.message {
 }
 
 /* ***** */
+@media screen and (orientation:portrait) {
+    .hero-image {--dim: 95%;}
+    .hero-image img{
+        height: auto;
+        width: var(--dim);
+    }
+
+        .hero-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 1fr;
+        padding: 0;
+    }
+    .hero-punch{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    .hero-image{
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+}
+@media screen and (orientation:landscape) {
+    .hero-image {--dim: 95%;}
+    .hero-image img{
+        width: auto;
+        height: var(--dim);
+    }
+}
 
 @media screen and (max-width:801px){
     .hero-grid{
@@ -491,10 +517,6 @@ input.message {
     .hero-image{
         grid-column: 1 / -1;
         grid-row: 2 / 3;
-    }
-    .hero-image img{
-        --widht: 94vw;
-        margin: 0;
     }
 }
 
