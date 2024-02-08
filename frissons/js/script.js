@@ -26,7 +26,12 @@ function checkHeaderHeight() {
     // Target
     //const t = document.querySelector('.full-height');
     // set CSS as a value
-     document.querySelector('.hero-grid').style.setProperty("height", 'calc( 100svh - ' + headerHeight + ')');
+    let elementList = document.querySelectorAll('.hero-grid');
+
+    for (let element of elementList) {
+      element.style.setProperty("height", 'calc( 100svh - ' + headerHeight + ')');
+    }
+/*      document.querySelectorAll('.hero-grid').style.setProperty("height", 'calc( 100svh - ' + headerHeight + ')'); */
 //     document.querySelector('.full-height').style.setProperty("--sl-header-height", headerHeight); */
 /*     document.querySelector('.full-height').style.setProperty("--sl-header-height", headerHeight); */
   }

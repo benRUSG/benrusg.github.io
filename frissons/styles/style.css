@@ -420,10 +420,10 @@ input.message {
 /*  Carousel Hero Section  */
 
 #hero {
-    --clr-slide-1: hsl(35.6deg 7.19% 47.04%);
-    --clr-slide-2: hsl(49, 41%, 43%);
-    --clr-slide-3: hsl(201, 41%, 36%);
-    --clr-slide-4: hsl(24, 54%, 33%);
+    --clr-slide-1: hsl(37, 6%, 59%);
+    --clr-slide-2: hsl(48, 12%, 62%);
+    --clr-slide-3: hsl(201, 12%, 56%);
+    --clr-slide-4: hsl(175, 6%, 62%);
 }
 
  .hero-grid{
