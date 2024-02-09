@@ -435,28 +435,67 @@ input.message {
     align-items: center;
     justify-items: center;
 }
-.hero-image {
-    grid-column: 2 / 3;
-    grid-row: 1 / -1;
-}
-
-.hero-image img{
-/*    width: var(--dim);
-     height: var(--dim);
-    max-height: 95vh;
-    max-width: 95vh;
-    object-fit: contain;
-    margin: 1em; */
-}
 
 .hero-punch{
     font-family: var(--ff-alt);
     color: var(--background);
     font-size: 4rem;
     text-align: center;
-    grid-column: 1 / 2;
-    grid-row: 1 / -1;
 }
+@media screen and (orientation:portrait) {
+    
+    .hero-image img{
+        --dim: 95vw;
+        height: auto;
+        width: var(--dim);
+    }
+
+    .hero-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 1fr;
+        padding: 0;
+    }
+    .hero-punch{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    .hero-image{
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+}
+@media screen and (orientation:landscape) {
+
+    .hero-image {
+        grid-column: 2 / 3;
+        grid-row: 1 / -1;
+    }
+    .hero-punch{
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+    }
+    .hero-image img{
+        --dim: 75vh;
+        width: auto;
+        max-height: var(--dim);
+    }
+}
+
+/* @media screen and (max-width:801px){
+    .hero-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 1fr;
+        padding: 0;
+    }
+    .hero-punch{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    .hero-image{
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+} */
 
 .slide-1 {
     background-color: var(--clr-slide-1);
@@ -475,51 +514,6 @@ input.message {
 }
 
 /* ***** */
-@media screen and (orientation:portrait) {
-    .hero-image {--dim: 95%;}
-    .hero-image img{
-        height: auto;
-        width: var(--dim);
-    }
-
-        .hero-grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 30% 1fr;
-        padding: 0;
-    }
-    .hero-punch{
-        grid-column: 1 / -1;
-        grid-row: 1 / 2;
-    }
-    .hero-image{
-        grid-column: 1 / -1;
-        grid-row: 2 / 3;
-    }
-}
-@media screen and (orientation:landscape) {
-    .hero-image {--dim: 95%;}
-    .hero-image img{
-        width: auto;
-        height: var(--dim);
-    }
-}
-
-@media screen and (max-width:801px){
-    .hero-grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 30% 1fr;
-        padding: 0;
-    }
-    .hero-punch{
-        grid-column: 1 / -1;
-        grid-row: 1 / 2;
-    }
-    .hero-image{
-        grid-column: 1 / -1;
-        grid-row: 2 / 3;
-    }
-}
-
 
  
 @media screen and (max-width:650px){
