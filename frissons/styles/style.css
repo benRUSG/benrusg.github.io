@@ -142,6 +142,8 @@ img, picture, svg, video {
     display: block;
     max-width: 100%;
     max-height: 100%;
+    line-height: 0
+;
 }
 
 ul, ol {
@@ -186,7 +188,7 @@ p {
 header {
     font-family: var(--ff-alt);
     font-size: 1.3rem;
-    max-width: 1000px;
+    max-width: 1340px;
     margin: 0 auto;
     padding: 1em;
  }
@@ -196,7 +198,7 @@ header a:hover {
 }
  
 .logo {
-    width: 160px;
+    width: 350px;
     height: auto;
 }
 
@@ -333,11 +335,9 @@ nav {
 }
 
 .nav {
-    max-width: 1000px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-grow: 1;
 }
 
@@ -436,7 +436,7 @@ input.message {
     background-color: burlywood;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
@@ -451,13 +451,25 @@ input.message {
 
 .hero-punch h1{
     color: var(--clr-punch);
+    font-size: calc(5.5rem - 0.5vw);
 }
+
+.cta{
+    font-family: var(--ff);
+    font-weight: 100;
+    background: var(--clr-red);
+    font-size: 1.2rem;
+    padding: 0.1em 0.9em;
+    border: none;
+    border-radius: 100px;
+}
+
 
 @media screen and (orientation:portrait) {
     
     .hero-image img{
-        --dim: 95vw;
-        height: auto;
+        --dim: 100svw;
+        height: auto !important;
         width: var(--dim);
     }
 
@@ -474,21 +486,53 @@ input.message {
         grid-column: 1 / -1;
         grid-row: 2 / 3;
     }
+
+    
+    .hero-grid {
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    .hero-punch {
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100%;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-punch h1{
+        font-size: 3.5rem;
+        line-height: 0.9em;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 450px) {
+        .hero-punch {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+        }
+    }
 }
 @media screen and (orientation:landscape) {
 
     .hero-image {
         grid-column: 2 / 3;
         grid-row: 1 / -1;
+        justify-self: flex-end;
     }
     .hero-punch{
         grid-column: 1 / 2;
         grid-row: 1 / -1;
     }
     .hero-image img{
-        --dim: 75vh;
+        /* --dim: 85vh; */
         width: auto;
-        max-height: var(--dim);
+       /*  max-height: var(--dim); */
     }
 }
 
@@ -527,16 +571,17 @@ input.message {
 /* ***** */
 
  
-@media screen and (max-width:650px){
+@media screen and (max-width:823px){
     nav {
         gap: 0.3em;
-    }
+        align-items: center;
+        }
     .sub-nav {
         gap: 0.8em;
     }
     
     .logo {
-        width: 130px;
+        width: 290px;
     }
 
     form.email {
@@ -565,12 +610,16 @@ input.message {
     .lang-selector .item:first-child  {
         border-bottom: 1px solid var(--background);
     }
+    
  }
 
  
 @media screen and (max-width:470px){
     form.email {
         max-width: 87%;
+    }
+    .logo {
+        width: 270px;
     }
 
  }

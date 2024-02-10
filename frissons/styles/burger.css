@@ -146,7 +146,7 @@ box-shadow: 0px 0px 5px 4px var(--background); */
    gap: 0.5em;
 }
 
-@media screen and (max-width:650px){
+@media screen and (max-width:823px){
 
    #burger-container.on {
       display: flex;
