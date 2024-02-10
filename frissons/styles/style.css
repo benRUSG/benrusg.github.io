@@ -517,6 +517,12 @@ input.message {
             justify-content: space-evenly;
             height: 100%;
         }
+            
+        .hero-image img{
+            --dim: 100svw;
+            height: auto !important;
+            width: var(--dim);
+        }
     }
 }
 @media screen and (orientation:landscape) {
