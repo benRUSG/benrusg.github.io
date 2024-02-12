@@ -349,9 +349,18 @@ nav {
     color: var(--foreground);
     border: none;
 }
-#myTab.in .nav-link:focus, #myTab.in .nav-link:hover {
+
+.in .nav-tabs .nav-link:focus, .in .nav-tabs .nav-link:hover {
     color: var(--background);
     border: none;
+}
+
+.nav-link.active {
+    border-bottom: 0.3em solid var(--foreground) !important;
+}
+
+.logo.nav-link, .nav-tabs .nav-item.show .logo.nav-link, .nav-tabs .logo.nav-link.active{
+    border: 0 !important;
 }
 
 .nav {
@@ -364,8 +373,10 @@ nav {
 .sub-nav {
     display: flex;
     gap: 1.5em;
-    align-items: center;
+    align-items: baseline;
 }
+
+
 
 /* *** */
 
@@ -619,6 +630,14 @@ input.message {
         color: var(--background);
         background-color: inherit;
         border: none;
+    }
+    .nav-link:hover, .nav-tabs .nav-item.show .nav-link:hover, .nav-tabs .nav-link.active {
+        color: var(--background) !important;
+        background-color: inherit;
+        border: none;
+    }
+    .nav-link.active {
+        border-bottom: 0.3em solid var(--background) !important;
     }
     .lang-selector .item {
         background: var(--foreground);

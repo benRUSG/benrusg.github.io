@@ -1,4 +1,5 @@
 
+const burgerContainer = document.querySelector('#burger-container');
 const burger = document.querySelector('#burger');
 const wrapper = document.querySelector('#myTab');
 const logo = document.querySelector('.nav-item.logo');
@@ -6,7 +7,7 @@ const logo = document.querySelector('.nav-item.logo');
 const toogleMenu = () => {
    burger.classList.toggle('checked');
    wrapper.classList.toggle('in');
-/*    logo.classList.toggle('in'); */
+   burgerContainer.classList.toggle('no-bg');
  }
 
 burger.addEventListener('click', () => {
