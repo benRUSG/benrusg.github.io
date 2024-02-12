@@ -178,6 +178,7 @@ background-color: var(--clr-red);
     height: 100svh;
     background: transparent;
     transition: all 300ms;
+    pointer-events: none;
 }
 
 .blanket.on{
