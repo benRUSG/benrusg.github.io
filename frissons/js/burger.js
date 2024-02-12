@@ -3,6 +3,7 @@ const burgerContainer = document.querySelector('#burger-container');
 const burger = document.querySelector('#burger');
 const wrapper = document.querySelector('#myTab');
 const logo = document.querySelector('.nav-item.logo');
+const blanket = document.querySelector('.blanket');
 
 const toogleMenu = () => {
    burger.classList.toggle('checked');
@@ -10,8 +11,13 @@ const toogleMenu = () => {
    burgerContainer.classList.toggle('no-bg');
  }
 
+const toogleblanket = () => {
+   blanket.classList.toggle('on');
+ }
+
 burger.addEventListener('click', () => {
    toogleMenu();
+   toogleblanket();
 });
 
 logo.addEventListener('click', () => {
