@@ -213,7 +213,7 @@ p {
 header {
     font-family: var(--ff-alt);
     font-size: 1.3rem;
-    max-width: 1340px;
+    /* max-width: 1340px; */
     margin: 0 auto;
     padding: 1.2em;
  }
@@ -480,8 +480,14 @@ input.message {
 
 .hero-punch h1{
     color: var(--clr-punch);
-    font-size: calc(5.5rem - 0.5vw);
-}
+    font-size: calc(8.5rem - 0.5vw);
+    @media screen and (max-width: 1014px) {
+        font-size: calc(6.5rem - 0.5vw);
+        }
+    @media screen and (max-width: 823px) {
+        font-size: calc(5.5rem - 0.5vw);
+        }
+    }
 
 .cta{
     font-family: var(--ff);
@@ -534,7 +540,7 @@ input.message {
     }
 
     .hero-punch h1{
-        font-size: 3.5rem;
+        /* font-size: 3.5rem; */
         line-height: 0.9em;
         margin: 0;
     }
