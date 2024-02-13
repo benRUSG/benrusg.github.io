@@ -9,18 +9,16 @@ const toogleMenu = () => {
    burger.classList.toggle('checked');
    wrapper.classList.toggle('in');
    burgerContainer.classList.toggle('no-bg');
- }
-
-const toogleblanket = () => {
    blanket.classList.toggle('on');
  }
 
+
 burger.addEventListener('click', () => {
    toogleMenu();
-   toogleblanket();
 });
 
-logo.addEventListener('click', () => {
-   toogleMenu();
+wrapper.addEventListener('click', () => {
+   if (wrapper.classList.contains("in")) {
+      toogleMenu();
+    }
 });
-
