@@ -4,12 +4,6 @@ const myCarouselElement = document.querySelector('#carousel-hero-section')
 const carousel = new bootstrap.Carousel(myCarouselElement, {
   interval: 6000
 })
-/* const myCarouselElement = document.querySelector('#carousel-hero')
-
-const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 4000
-})
- */
 
 // Hero Carousel Height
 // check header height
@@ -20,19 +14,7 @@ function checkHeaderHeight() {
 
     // set header height rendered style
     const headerHeight = styles.height;
-    // set CSS as a value to an element
-/*     let elementList = document.querySelectorAll('.hero-grid');
-    let elementListChild = document.querySelectorAll('.hero-img');
-
-    for (let element of elementList) {
-      element.style.setProperty("height", 'calc( 100svh - ' + headerHeight + ')');
-    }
-    for (let element of elementListChild) {
-      element.style.setProperty("height", 'calc( 100svh - ' + headerHeight + ')');
-      element.style.setProperty("width", 'calc( 100svh - ' + headerHeight + ')');
-    } */
-    r.style.setProperty('--full-height', 'calc( 100svh - ' + headerHeight + ' )');
-
+    r.style.setProperty('--header-height', headerHeight);
   }
   addEventListener("resize", checkHeaderHeight);
   addEventListener("orientationchange", checkHeaderHeight);
