@@ -599,6 +599,7 @@ input.message {
         top: 0;}
     .hero-grid{
         height: 100svh;
+        width: 100svw;
     }
     .hero-image img{
         width: 100%;
