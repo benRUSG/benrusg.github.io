@@ -21,7 +21,7 @@ logo.addEventListener('click', () => {
 
 const navLink = document.querySelectorAll('.sub-nav .nav-item');
 
-for(var i =0; i < link.length; i++) {
+for(var i =0; i < navLink.length; i++) {
   (function(i) {
     navLink[i].addEventListener('click', function(e) {
       toogleMenu();;

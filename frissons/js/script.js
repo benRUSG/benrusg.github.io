@@ -21,6 +21,25 @@ function checkHeaderHeight() {
   checkHeaderHeight();
 
 
+// Hero-Punch Width
+
+function checkPunchWidth() {
+  
+    var r = document.querySelector(':root');
+    const punch = document.querySelector('#home-tab-pane .active .hero-grid .hero-punch h1');
+    const punchWidth = punch.offsetWidth;
+    if(window.innerWidth > 822) {
+      r.style.setProperty('--punch-width', punchWidth + 'px');
+    }
+    else {
+      r.style.setProperty('--punch-width', '0');
+    }
+  }
+addEventListener("resize", checkPunchWidth);
+addEventListener("orientationchange", checkPunchWidth);
+checkPunchWidth();
+
+
 // Tab Outside btn
 /* const carousel = document.querySelector('#carousel-hero'); */
 const activePane = document.querySelector('.tab-pane.active');

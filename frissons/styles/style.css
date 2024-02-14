@@ -48,6 +48,8 @@
 
     scroll-behavior: smooth; 
 
+    --full-height: calc(100svh - var(--header-height));
+
     /* Bootstrap */
     --bs-border-width: 0;
   }
@@ -299,7 +301,7 @@ header a:hover {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: calc(100svh - var(--sl-header-height));
+    height: calc(100svh - var(--sl--full-height));
  } */
 .hero-slide img {
     display: block;
@@ -462,9 +464,9 @@ input.message {
 /*  Carousel Hero Section  */
 
  .hero-grid{
-    /* height: var(--full-height); */
+    height: var(--full-height);
     /* height: 100%; */
-    height: calc(100svh - var(--header-height));
+/*     height: calc(100svh - var(--full-height)); */
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: 1fr;
@@ -564,34 +566,13 @@ input.message {
     .hero-punch{
         grid-column: 1 / 2;
         grid-row: 1 / -1;
+        justify-self: stretch;
     }
     .hero-image img {
         width: var(--full-height);
         height: auto;
     }
-/*     .hero-image img{
-        width: 100%;
-        max-width: var(--full-height);
-        max-height: var(--full-height);
-        height: 100%;
-    } */
 }
-
-/* @media screen and (max-width:801px){
-    .hero-grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 30% 1fr;
-        padding: 0;
-    }
-    .hero-punch{
-        grid-column: 1 / -1;
-        grid-row: 1 / 2;
-    }
-    .hero-image{
-        grid-column: 1 / -1;
-        grid-row: 2 / 3;
-    }
-} */
 
 .slide-1 {
     background: var(--clr-slide-1);
@@ -675,7 +656,7 @@ input.message {
  }
     
 @media screen and (max-width: 1014px) {
-    .hero-punch h1{font-size: calc(6.5rem - 0.5vw);}
+    .hero-punch h1{font-size: calc(var(--punch-width) / 4);}
 }
 
 @media screen and (max-width: 823px) {
