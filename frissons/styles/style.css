@@ -523,7 +523,6 @@ input.message {
         grid-template-rows: 1fr 1fr;
     }
 
-
     .hero-punch {
         display: flex;
         flex-direction: column;
@@ -674,8 +673,15 @@ input.message {
     }
     
  }
+    
+@media screen and (max-width: 1014px) {
+    .hero-punch h1{font-size: calc(6.5rem - 0.5vw);}
+}
 
- 
+@media screen and (max-width: 823px) {
+    .hero-punch h1{font-size: calc(4.5rem - 0.5vw);}
+}
+
 @media screen and (max-width:470px){
     
     .content {
@@ -688,18 +694,21 @@ input.message {
     .logo {
         width: 228px;
     }
+
+    .hero-punch {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .hero-punch h1{font-size: calc(3.5rem - 0.5vw);}
+
     .cta{
         font-size: 1.2rem;
+        align-self: end;
+        margin-bottom: 2em;
+        max-width: 33%;
     }
 
  }
 
 
-    
-@media screen and (max-width: 1014px) {
-    .hero-punch h1{font-size: calc(6.5rem - 0.5vw);}
-}
-
-@media screen and (max-width: 823px) {
-    .hero-punch h1{font-size: calc(4.5rem - 0.5vw);}
-}
