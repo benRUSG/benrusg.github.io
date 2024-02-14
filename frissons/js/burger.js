@@ -12,13 +12,19 @@ const toogleMenu = () => {
    blanket.classList.toggle('on');
  }
 
-
 burger.addEventListener('click', () => {
    toogleMenu();
 });
-
-wrapper.addEventListener('click', () => {
-   if (wrapper.classList.contains("in")) {
-      toogleMenu();
-    }
+logo.addEventListener('click', () => {
+   toogleMenu();
 });
+
+const navLink = document.querySelectorAll('.sub-nav .nav-item');
+
+for(var i =0; i < link.length; i++) {
+  (function(i) {
+    navLink[i].addEventListener('click', function(e) {
+      toogleMenu();;
+      });
+   })(i);
+}
