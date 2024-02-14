@@ -701,5 +701,5 @@ input.message {
 }
 
 @media screen and (max-width: 823px) {
-    .hero-punch h1{font-size: calc(5.5rem - 0.5vw);}
+    .hero-punch h1{font-size: calc(4.5rem - 0.5vw);}
 }
