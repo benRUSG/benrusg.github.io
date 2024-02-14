@@ -482,9 +482,13 @@ input.message {
 .hero-punch h1{
     color: var(--clr-punch);
     font-size: calc(8.5rem - 0.5vw);
+    
     @media screen and (max-width: 1014px) {
         font-size: calc(6.5rem - 0.5vw);
         }
+    }
+
+.hero-punch h1{
     @media screen and (max-width: 823px) {
         font-size: calc(5.5rem - 0.5vw);
         }
