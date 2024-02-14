@@ -483,14 +483,6 @@ input.message {
     color: var(--clr-punch);
     font-size: calc(8.5rem - 0.5vw);
 }
-    
-@media screen and (max-width: 1014px) {
-    .hero-punch h1{font-size: calc(6.5rem - 0.5vw);}
-}
-
-@media screen and (max-width: 823px) {
-    .hero-punch h1{font-size: calc(5.5rem - 0.5vw);}
-}
 
 .cta{
     font-family: var(--ff);
@@ -701,3 +693,13 @@ input.message {
     }
 
  }
+
+
+    
+@media screen and (max-width: 1014px) {
+    .hero-punch h1{font-size: calc(6.5rem - 0.5vw);}
+}
+
+@media screen and (max-width: 823px) {
+    .hero-punch h1{font-size: calc(5.5rem - 0.5vw);}
+}
