@@ -696,6 +696,7 @@ input.message {
     }
 
     .hero-punch {
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
     }
@@ -704,8 +705,6 @@ input.message {
 
     .cta{
         font-size: 1.2rem;
-        align-self: end;
-        margin-bottom: 2em;
         max-width: 33%;
     }
 
