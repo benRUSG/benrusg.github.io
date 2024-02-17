@@ -19,13 +19,15 @@ logo.addEventListener('click', () => {
    toogleMenu();
 });
 
-const navLink = document.querySelectorAll('.sub-nav .nav-item');
+const navLink = document.querySelectorAll('.nav-item');
 
 for(var i =0; i < navLink.length; i++) {
   (function(i) {
-    navLink[i].addEventListener('click', function() {
-      toogleMenu();
-      console.log(navLink[i]);
+      navLink[i].addEventListener('click', function() {
+         if(wrapper.className.includes('in')){
+            toogleMenu();
+            console.log(navLink[i]);
+         }
       });
    })(i);
 }

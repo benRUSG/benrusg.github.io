@@ -4,16 +4,6 @@ const options = [...document.querySelectorAll('.options .item')];
 
 let activeOption = 0; // default should be 0
 
-/* window.onclick = (e) => {
-    if(!e.target.classList.contains('select')){
-        select.classList.remove('active');
-        optionBox.classList.remove('active');
-    } else{
-        select.classList.toggle('active');
-        optionBox.classList.toggle('active');
-    }
-} */
-
 // Had to change onclick to addEventListener cause not working on mobile
 window.addEventListener("click", function(e) {
     if(!e.target.classList.contains('select')){
