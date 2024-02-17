@@ -187,6 +187,7 @@ background-color: var(--clr-red);
     background: var(--clr-blanket);
     transition: all 300ms;
     backdrop-filter: blur(5px);
+    z-index: 1;
 }
 
 /* reset end */
