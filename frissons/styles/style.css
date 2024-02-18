@@ -589,6 +589,7 @@ input.message {
 
 .slide-3 {
     background: var(--clr-slide-3);
+    /* background-image: url('../img/le-monstre_bg.jpg'); */
 }
 
 .slide-4 {
@@ -688,11 +689,19 @@ input.message {
         justify-content: space-evenly;
     }
 
-    .hero-punch h1{font-size: calc(3.5rem - 0.5vw);}
+    .hero-punch h1{
+        font-size: calc(3.5rem - 0.5vw);
+        /* align-self: flex-start;
+        margin-top: 0.8em; */
+    }
 
     .cta{
         font-size: 1.2rem;
         max-width: 33%;
+        line-height: 1.3em;
+        padding: 1em;
+        /* align-self: end;
+        margin-bottom: 2em; */
     }
 
  }
