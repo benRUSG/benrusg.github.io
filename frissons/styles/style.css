@@ -502,6 +502,12 @@ input.message {
     border-radius: 100px;
 }
 
+.caption {
+	text-align: center;
+	font-size: 0.9rem;
+    margin-top: 0.9rem;
+    font-style: italic;
+}
 
 @media screen and (orientation:portrait) {
     
