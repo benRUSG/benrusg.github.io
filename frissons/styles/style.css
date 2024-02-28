@@ -406,6 +406,69 @@ nav {
     transition-duration: 0.3s;
 }
 
+.punchline {
+	font-size: 2rem;
+	font-weight: 500;
+	letter-spacing: 0.000001rem;
+	background: var(--foreground);
+	color: var(--background);
+	padding: 2em 1em;
+    margin-top: 2rem;
+	border-radius: 45% 55% 59% 41% / 48% 49% 51% 52%;
+	text-align: center;
+}
+
+.podcast {
+	margin: 4rem 0;
+	display: grid;
+	justify-items: center;
+}
+
+.podcast h2 {
+	font-size: 2rem;
+	text-align: center;
+    margin-bottom: 0.15em;
+}
+
+.podcast_links li::before {
+    --size: 1.3em;
+    content: "";
+    width: var(--size);
+    height: var(--size);
+    background-size: var(--size) var(--size);
+    position: relative;
+    top: 0.01em;
+}
+
+.podcast_links li.apple::before {
+    background-image: url('../img/ico_apple_podcasts.svg');
+}
+
+.podcast_links li.spotify::before {
+    background-image: url('../img/ico_spotify.svg');
+}
+
+.podcast_links li.auivo::before {
+    background-image: url('../img/ico_auvio.svg');
+}
+
+.podcast_links li.youtube::before {
+    background-image: url('../img/ico_youtube.svg');
+}
+
+.podcast_links li{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5em;
+}
+
+.publisher {
+	font-size: 0.95em;
+	font-weight: 100;
+	text-align: center;
+	margin-bottom: 2em !important;
+}
+
 #contact {
     text-align: center;
 }
@@ -678,6 +741,9 @@ input.message {
 
 @media screen and (max-width:470px){
     
+    h1{
+        text-align: center;
+    }
     .content {
         margin: 1rem auto 0;
     }
