@@ -811,3 +811,10 @@ input.message {
  }
 
 
+
+ .st0{
+    fill: var(--foreground);}
+ .st1{
+    fill:#D3D3D3;}
+ .st2{
+    fill:var(--background);};
