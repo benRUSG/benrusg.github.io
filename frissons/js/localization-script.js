@@ -33,6 +33,7 @@ let translations = {};
 // Check if lang is stored in Local Storage
 document.addEventListener("DOMContentLoaded", () => {
   if (lang !== null) {
+    select.innerHTML = lang;
     setLocale(lang);
 
     bindLocaleSwitcher(lang);

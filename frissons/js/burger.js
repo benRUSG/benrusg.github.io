@@ -18,6 +18,14 @@ burger.addEventListener('click', () => {
 logo.addEventListener('click', () => {
    toogleMenu();
 });
+ 
+// onClickOutside(blanket, () => console.log('ushg'));
+/* window.addEventListener('click', () => {
+   if (this.hasClass('myTab')) {
+      toogleMenu();   
+   }
+   return false;
+}); */
 
 const navLink = document.querySelectorAll('.nav-item');
 
@@ -26,7 +34,6 @@ for(var i =0; i < navLink.length; i++) {
       navLink[i].addEventListener('click', function() {
          if(wrapper.className.includes('in')){
             toogleMenu();
-            console.log(navLink[i]);
          }
       });
    })(i);
