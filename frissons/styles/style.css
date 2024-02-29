@@ -37,6 +37,8 @@
     --clr-slide-4: hsl(175, 6%, 62%);
     
     --clr-blanket: hsla(200, 8.6%, 27.5%, 0.7);
+
+    --clr-shaddow: hsla(48, 12%, 62%, 0.7);
   
     --foreground: var(--clr-dark-light);
     --background: var(--clr-light);
@@ -60,6 +62,8 @@
     --clr-dark-light: hsl(200deg 11.03% 19.94%);
     --clr-accent: rgb(255, 170, 0);
     --clr-accent-neg: rgb(0, 90, 146);
+
+    --clr-shaddow: hsla(48, 12%, 62%, 0);
 
     --foreground: var(--clr-light);
     --background: var(--clr-dark-light);
@@ -813,8 +817,9 @@ input.message {
 
 
  .st0{
-    fill: var(--foreground);}
- .st1{
-    fill:#D3D3D3;}
- .st2{
-    fill:var(--background);};
+    fill: var(--foreground);
+} .st1{
+    fill:var(--clr-shaddow);
+} .st2{
+    fill:var(--foreground);
+}
