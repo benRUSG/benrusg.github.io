@@ -491,6 +491,10 @@ nav {
     mask: var(--ico-canada);
 }
 
+.podcast_links li.canada::before {
+    background-image: url('../img/ico_canada.svg');
+}
+
 .podcast_links li{
     display: grid;
     grid-template-columns: auto auto;
