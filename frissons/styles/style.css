@@ -455,6 +455,10 @@ nav {
     }
 }
 
+#work-tab-pane, #about-tab-pane {
+    font-size: calc(1rem + 0.2vw);
+}
+
 .summary {
     max-width: 600px;
     margin-bottom: 1.5rem;
@@ -467,7 +471,7 @@ nav {
 }
 
 .podcast h2 {
-	font-size: 2rem;
+	font-size: calc(2rem + 1.5vw);
 	text-align: center;
     margin-bottom: 0.15em;
 }
@@ -535,8 +539,13 @@ nav {
 	text-align: center;
 }
 
-.about-punchline{
+.about-punchline {
     margin: 2rem 0 3rem;
+    font-family: var(--ff);
+    text-align: center;
+    font-size: calc(1.5rem + 0.05vw);
+    font-weight: 200;
+    line-height: 1.7em;
 }
 
 #contact {
@@ -636,10 +645,9 @@ input.message {
 }
 
 .caption {
-	text-align: center;
-	font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-top: 0.9rem;
-    font-style: italic;
+    font-weight: 100;
 }
 
 @media screen and (orientation:portrait) {
