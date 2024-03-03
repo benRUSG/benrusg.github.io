@@ -500,7 +500,11 @@ nav {
     grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
-    margin: 15rem auto 0 auto
+    margin: 8rem auto 0 auto
+}
+
+.podcast h2, .podcast .details {
+    grid-column: 1/-1;
 }
 
 .podcast h2 {
@@ -512,13 +516,11 @@ nav {
 .podcast-cover {
     padding: 0 2rem;
     grid-column: 1/2;
-    grid-row: 1/-1;
+    grid-row: 3/-1;
 }
 
 .podcast-cover.right {
-    padding: 0 2rem;
     grid-column: 2/3;
-    grid-row: 1/-1;
 }
 
 .podcast_links li a::before {
@@ -591,6 +593,11 @@ nav {
         grid-row: 3/4;
         margin-bottom: 2rem;
     }
+
+    .podcast-cover.right {
+        grid-column: unset;
+    }
+
     .podcast {
         grid-template-columns: 1fr;
         justify-items: center;
