@@ -489,35 +489,18 @@ nav {
 	border-radius: 1rem;
 }
 
-
+/* Podcast */
 .podcast-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 15rem auto 0 auto
-}
-
-@media (max-width:1000px) {
-    
-    .podcast-container {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        margin: 5rem auto 0 auto;
-    }
-        
-    .podcast-cover {
-        grid-row: 1/2;
-        padding: 0 1rem;
-    }
-    .podcast {
-        padding: 0 1rem;
-    }
 }
 
 .podcast {
 	display: grid;
 	justify-items: center;
     grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin: 15rem auto 0 auto
 }
 
 .podcast h2 {
@@ -527,7 +510,15 @@ nav {
 }
 
 .podcast-cover {
-	padding: 0 2rem;
+    padding: 0 2rem;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+}
+
+.podcast-cover.right {
+    padding: 0 2rem;
+    grid-column: 2/3;
+    grid-row: 1/-1;
 }
 
 .podcast_links li a::before {
@@ -592,6 +583,23 @@ nav {
 .publisher{
     font-weight: 600;
 }
+
+@media (max-width:1000px) {
+        
+    .podcast-cover {
+        padding: 0 1rem;
+        grid-row: 3/4;
+        margin-bottom: 2rem;
+    }
+    .podcast {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: 5rem auto 0 auto;
+        padding: 0 1rem;
+    }
+}
+
+/* ***** */
 
 #about p {
 	text-align: center;
