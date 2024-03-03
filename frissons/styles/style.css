@@ -495,6 +495,21 @@ nav {
     margin: 15rem auto 0 auto
 }
 
+@media (max-width:1000px) {
+    
+    .podcast-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+        
+    .podcast-cover {
+        grid-row: 1/2;
+    }
+    .podcast {
+        padding: 0 1rem;
+    }
+}
+
 .podcast {
 	display: grid;
 	justify-items: center;
