@@ -473,8 +473,10 @@ nav {
     }
 }
 .summary {
-    max-width: 600px;
+    max-width: 680px;
     margin-bottom: 1.5rem;
+    text-align: center;
+    padding: 0 1rem;
 }
 
 /* #work-tab-pane {
@@ -500,10 +502,12 @@ nav {
     .podcast-container {
         grid-template-columns: 1fr;
         justify-items: center;
+        margin: 5rem auto 0 auto;
     }
         
     .podcast-cover {
         grid-row: 1/2;
+        padding: 0 1rem;
     }
     .podcast {
         padding: 0 1rem;
@@ -578,11 +582,15 @@ nav {
     gap: 0.5em;
 }
 
-.publisher {
+.details {
 	font-size: 0.95em;
 	font-weight: 100;
 	text-align: center;
 	margin-bottom: 2em !important;
+}
+
+.publisher{
+    font-weight: 600;
 }
 
 #about p {
