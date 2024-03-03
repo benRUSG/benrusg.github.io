@@ -472,12 +472,6 @@ nav {
         padding: 1.5em 1em;
     }
 }
-.summary {
-    max-width: 680px;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    padding: 0 1rem;
-}
 
 /* #work-tab-pane {
 	background-image: url("../img/frissons_stroke_plain.svg");
@@ -490,6 +484,10 @@ nav {
 }
 
 /* Podcast */
+#work, #about, #contact {
+    margin-bottom: 4rem;
+}
+
 .podcast-container {
     display: grid;
 }
@@ -584,6 +582,18 @@ nav {
 
 .publisher{
     font-weight: 600;
+}
+
+.summary {
+    max-width: 680px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding: 0 1rem;
+    align-self: center;
+}
+
+.summary p:last-of-type {
+    margin: 0;
 }
 
 @media (max-width:1000px) {
