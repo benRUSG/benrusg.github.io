@@ -487,6 +487,7 @@ nav {
 	border-radius: 1rem;
 }
 
+
 .podcast-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -504,6 +505,10 @@ nav {
 	font-size: calc(2rem + 1.5vw);
 	text-align: center;
     margin-bottom: 0.15em;
+}
+
+.podcast-cover {
+	padding: 0 2rem;
 }
 
 .podcast_links li a::before {
