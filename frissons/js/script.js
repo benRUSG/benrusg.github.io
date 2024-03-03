@@ -9,9 +9,9 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
 // check header height
 function checkHeaderHeight() {
     var r = document.querySelector(':root');
+    var body = document.querySelector('body');
     const header = document.querySelector('header');
     const styles = window.getComputedStyle(header);
-
     // set header height rendered style
     const headerHeight = styles.height;
     r.style.setProperty('--header-height', headerHeight);

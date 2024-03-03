@@ -477,24 +477,21 @@ nav {
     margin-bottom: 1.5rem;
 }
 
-#work-tab-pane::before {
-	content: "";
-	--ico-apple: url("../img/frissons_stroke_plain.svg");
-	background-color: var(--foreground);
-	-webkit-mask: var(--ico-apple);
-	mask: var(--ico-apple);
-	-webkit-mask-size: 50%;
-	mask-size: 50%;
-	width: 100%;
-	height: 100%;
-	display: block;
+/* #work-tab-pane {
+	background-image: url("../img/frissons_stroke_plain.svg");
+	background-size: 100%;
+    padding: 0 2rem 5rem;
+} */
+
+#work-tab-pane img {
+	border-radius: 1rem;
 }
 
 .podcast-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin: 10rem auto 0 auto
+    margin: 15rem auto 0 auto
 }
 
 .podcast {
